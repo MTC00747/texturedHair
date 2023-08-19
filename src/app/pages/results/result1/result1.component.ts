@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { ResultadosService } from 'src/app/resultados.service';
 
 @Component({
@@ -6,7 +6,7 @@ import { ResultadosService } from 'src/app/resultados.service';
   templateUrl: './result1.component.html',
   styleUrls: ['./result1.component.css']
 })
-export class Result1Component implements OnInit {
+export class Result1Component {
   image: string = ''
 
   Mid: any = {
@@ -16,7 +16,6 @@ export class Result1Component implements OnInit {
     backgroundColor: 'transparent',
     borderRadius: '10px 10px 10px 10px',
     transition: 'width 0.5s, height 0.5s',
-
     border: '0.7px solid white'
   };
   After: any = {
@@ -114,66 +113,55 @@ export class Result1Component implements OnInit {
   TextoNono: boolean = false
 
 
-  curly = this.resultService.Resultado.includes('Curly')
-  coily = this.resultService.Resultado.includes('Coily')
-  Kinky = this.resultService.Resultado.includes('Kinky')
-
-  Oil = this.resultService.Resultado.includes('Oil')
-  Balanced = this.resultService.Resultado.includes('Balanced')
-
-
-  Breakage = this.resultService.Resultado.includes('Breakage')
-  resistance = this.resultService.Resultado.includes('resistance')
-  due = this.resultService.Resultado.includes('due')
-  Nutrition = this.resultService.Resultado.includes('Nutrition')
-
-  growth = this.resultService.Resultado.includes('growth')
-  Thermal = this.resultService.Resultado.includes('Thermal')
 
   constructor(private resultService: ResultadosService) {
 
 
+    const curly = this.resultService.Resultado.includes('Curly')
+    const coily = this.resultService.Resultado.includes('Coily')
+    const Kinky = this.resultService.Resultado.includes('Kinky')
+
+    const Oil = this.resultService.Resultado.includes('Oil')
+    const Balanced = this.resultService.Resultado.includes('Balanced')
 
 
+    const Breakage = this.resultService.Resultado.includes('Breakage')
+    const resistance = this.resultService.Resultado.includes('resistance')
+    const due = this.resultService.Resultado.includes('due')
+    const Nutrition = this.resultService.Resultado.includes('Nutrition')
 
+    const growth = this.resultService.Resultado.includes('growth')
+    const Thermal = this.resultService.Resultado.includes('Thermal')
+    
+    if (curly && Oil) {
+      if (Breakage || resistance || due || Nutrition) {
+        this.image = '/assets/images/Curly-oily-02.png'
+        this.Mid.visivel = true;
+        this.Cream.visivel = true;
+        this.After.visivel = true;
+        this.Jelly.visivel = true;
+        this.Tonic.visivel = false;
+        this.Mask.visivel = true;
+        this.Treatment.visivel = true;
+        this.Leave.visivel = false;
+        this.Milk.visivel = false;
+      }
 
-
-
-  }
-  ngOnInit(): void {
-    this.verficarPrimeiro()
-    this.verificarDois()
-    this.verficarTres()
-    this.VerificarQuarto()
-    this.verificarQuinto()
-  }
-
-  //Curly-Oily
-  verficarPrimeiro() {
-    if (this.curly && this.Oil && this.growth || this.Thermal) {
-
-      this.image = '/assets/images/Curly-oily-03.png'
-      this.Mid.visivel = true;
-      this.Cream.visivel = true;
-      this.After.visivel = true;
-      this.Jelly.visivel = true;
-      this.Tonic.visivel = true;
-      this.Mask.visivel = true;
-      this.Treatment.visivel = true;
-      this.Leave.visivel = false;
-      this.Milk.visivel = false;
-    } else if (this.curly && this.Oil && this.Breakage || this.resistance || this.due || this.Nutrition) {
-
-      this.image = '/assets/images/Curly-oily-02.png'
-      this.Mid.visivel = true;
-      this.Cream.visivel = true;
-      this.After.visivel = true;
-      this.Jelly.visivel = true;
-      this.Tonic.visivel = false;
-      this.Mask.visivel = true;
-      this.Treatment.visivel = true;
-      this.Leave.visivel = false;
-      this.Milk.visivel = false;
+    if (curly && Oil) {
+      if (growth || Thermal) {
+        this.image = '/assets/images/Curly-oily-03.png'
+        this.Mid.visivel = true;
+        this.Cream.visivel = true;
+        this.After.visivel = true;
+        this.Jelly.visivel = true;
+        this.Tonic.visivel = true;
+        this.Mask.visivel = true;
+        this.Treatment.visivel = true;
+        this.Leave.visivel = false;
+        this.Milk.visivel = false;
+      }
+    }
+    
     }
 
     const resultOne = ['Curly', 'Oil', 'combing', 'control', 'curls', 'moisturization', 'Smoothness']
@@ -190,34 +178,38 @@ export class Result1Component implements OnInit {
       this.Leave.visivel = false;
       this.Milk.visivel = false;
     }
-  }
 
-  //Curly-Balanced
-  verificarDois() {
-    if (this.curly && this.Balanced && this.growth || this.Thermal) {
 
-      this.image = '/assets/images/Curly-balanced-03.png'
-      this.Mid.visivel = true;
-      this.Cream.visivel = true;
-      this.After.visivel = true;
-      this.Jelly.visivel = true;
-      this.Tonic.visivel = true;
-      this.Mask.visivel = true;
-      this.Treatment.visivel = true;
-      this.Leave.visivel = false;
-      this.Milk.visivel = false;
-    } else if (this.curly && this.Balanced && this.Breakage || this.resistance || this.due || this.Nutrition) {
+    //Curly-Balanced
 
-      this.image = '/assets/images/Curly-balanced-02.png'
-      this.Mid.visivel = true;
-      this.Cream.visivel = true;
-      this.After.visivel = true;
-      this.Jelly.visivel = true;
-      this.Tonic.visivel = false;
-      this.Mask.visivel = true;
-      this.Treatment.visivel = true;
-      this.Leave.visivel = false;
-      this.Milk.visivel = false;
+    if (curly && Balanced) {
+      if (growth || Thermal) {
+        this.image = '/assets/images/Curly-balanced-03.png'
+        this.Mid.visivel = true;
+        this.Cream.visivel = true;
+        this.After.visivel = true;
+        this.Jelly.visivel = true;
+        this.Tonic.visivel = true;
+        this.Mask.visivel = true;
+        this.Treatment.visivel = true;
+        this.Leave.visivel = false;
+        this.Milk.visivel = false;
+      }
+    }
+    if (curly && Balanced  ) {
+
+      if (Breakage || resistance || due || Nutrition) {
+        this.image = '/assets/images/Curly-balanced-02.png'
+        this.Mid.visivel = true;
+        this.Cream.visivel = true;
+        this.After.visivel = true;
+        this.Jelly.visivel = true;
+        this.Tonic.visivel = false;
+        this.Mask.visivel = true;
+        this.Treatment.visivel = true;
+        this.Leave.visivel = false;
+        this.Milk.visivel = false;
+      }
     }
     const resultFour = ['Curly', 'Balanced', 'combing', 'control', 'curls', 'moisturization', 'Smoothness']
     const todosOsValoresFour = resultFour.every(valor => this.resultService.Resultado.includes(valor))
@@ -233,33 +225,36 @@ export class Result1Component implements OnInit {
       this.Leave.visivel = false;
       this.Milk.visivel = false;
     }
-  }
+    //Coily-Oil
 
+    if (coily && Oil) {
+      if (growth || Thermal) {
+        this.image = '/assets/images/Coily-oily-03.png'
+        this.Mid.visivel = true;
+        this.Cream.visivel = false;
+        this.After.visivel = true;
+        this.Jelly.visivel = true;
+        this.Tonic.visivel = true;
+        this.Mask.visivel = true;
+        this.Treatment.visivel = true;
+        this.Leave.visivel = false;
+        this.Milk.visivel = false;
+      }
+    }
 
-  //Coily-Oil
-  verficarTres() {
-    if (this.coily && this.Oil && this.growth || this.Thermal) {
-      this.image = '/assets/images/Coily-oily-03.png'
-      this.Mid.visivel = true;
-      this.Cream.visivel = false;
-      this.After.visivel = true;
-      this.Jelly.visivel = true;
-      this.Tonic.visivel = true;
-      this.Mask.visivel = true;
-      this.Treatment.visivel = true;
-      this.Leave.visivel = false;
-      this.Milk.visivel = false;
-    } else if (this.coily && this.Oil && this.Breakage || this.resistance || this.due || this.Nutrition) {
-      this.image = '/assets/images/Coily-oily-02.png'
-      this.Mid.visivel = true;
-      this.Cream.visivel = false;
-      this.After.visivel = true;
-      this.Jelly.visivel = true;
-      this.Tonic.visivel = false;
-      this.Mask.visivel = true;
-      this.Treatment.visivel = true;
-      this.Leave.visivel = false;
-      this.Milk.visivel = false;
+    if (coily && Oil) {
+      if (Breakage || resistance || due || Nutrition) {
+        this.image = '/assets/images/Coily-oily-02.png'
+        this.Mid.visivel = true;
+        this.Cream.visivel = false;
+        this.After.visivel = true;
+        this.Jelly.visivel = true;
+        this.Tonic.visivel = false;
+        this.Mask.visivel = true;
+        this.Treatment.visivel = true;
+        this.Leave.visivel = false;
+        this.Milk.visivel = false;
+      }
     }
 
     const resultSeven = ['Coily', 'Oil', 'combing', 'control', 'curls', 'moisturization', 'Smoothness']
@@ -277,33 +272,41 @@ export class Result1Component implements OnInit {
       this.Leave.visivel = false;
       this.Milk.visivel = false;
     }
-  }
 
-  //Coily-Balanced
-  VerificarQuarto() {
-    if (this.coily && this.Balanced && this.growth || this.Thermal) {
-      this.image = '/assets/images/Coily-balanced-03.png'
-      this.Mid.visivel = true;
-      this.Cream.visivel = false;
-      this.After.visivel = true;
-      this.Jelly.visivel = true;
-      this.Tonic.visivel = true;
-      this.Mask.visivel = true;
-      this.Treatment.visivel = false;
-      this.Leave.visivel = true;
-      this.Milk.visivel = true;
-    } else if (this.coily && this.Balanced && this.Breakage || this.resistance || this.due || this.Nutrition) {
-      this.image = '/assets/images/Coily-balanced-02.png'
-      this.Mid.visivel = true;
-      this.Cream.visivel = false;
-      this.After.visivel = true;
-      this.Jelly.visivel = true;
-      this.Tonic.visivel = false;
-      this.Mask.visivel = true;
-      this.Treatment.visivel = false;
-      this.Leave.visivel = true;
-      this.Milk.visivel = true;
+
+
+    //Coily-Balanced
+
+    if (coily && Balanced) {
+      if (growth || Thermal) {
+        this.image = '/assets/images/Coily-balanced-03.png'
+        this.Mid.visivel = true;
+        this.Cream.visivel = false;
+        this.After.visivel = true;
+        this.Jelly.visivel = true;
+        this.Tonic.visivel = true;
+        this.Mask.visivel = true;
+        this.Treatment.visivel = false;
+        this.Leave.visivel = true;
+        this.Milk.visivel = true;
+      }
     }
+
+    if (coily && Balanced) {
+      if (Breakage || resistance || due || Nutrition) {
+        this.image = '/assets/images/Coily-balanced-02.png'
+        this.Mid.visivel = true;
+        this.Cream.visivel = false;
+        this.After.visivel = true;
+        this.Jelly.visivel = true;
+        this.Tonic.visivel = false;
+        this.Mask.visivel = true;
+        this.Treatment.visivel = false;
+        this.Leave.visivel = true;
+        this.Milk.visivel = true;
+      }
+    }
+
 
     const resultTeen = ['Coily', 'Balanced', 'combing', 'control', 'curls', 'moisturization', 'shine']
     const todosOsValoresTeen = resultTeen.every(valor => this.resultService.Resultado.includes(valor))
@@ -320,34 +323,40 @@ export class Result1Component implements OnInit {
       this.Leave.visivel = true;
       this.Milk.visivel = true;
     }
-  }
 
-  //Kinky-oil
-  verificarQuinto() {
-    if (this.Kinky && this.Oil && this.growth || this.Thermal) {
-      this.image = '/assets/images/Kinky/kink-oily-03.png'
-      this.Mid.visivel = true;
-      this.Cream.visivel = true;
-      this.After.visivel = true;
-      this.Jelly.visivel = true;
-      this.Tonic.visivel = false;
-      this.Mask.visivel = true;
-      this.Treatment.visivel = false;
-      this.Leave.visivel = false;
-      this.Milk.visivel = false;
-    } else if (this.Kinky && this.Oil && this.Breakage || this.resistance || this.due || this.Nutrition) {
 
-      this.image = '/assets/images/Kinky/kink-oily-02.png'
-      this.Mid.visivel = true;
-      this.Cream.visivel = false;
-      this.After.visivel = true;
-      this.Jelly.visivel = true;
-      this.Tonic.visivel = true;
-      this.Mask.visivel = true;
-      this.Treatment.visivel = true;
-      this.Leave.visivel = false;
-      this.Milk.visivel = false;
+    //Kinky-oil
+
+    if (Kinky && Oil) {
+      if (growth || Thermal) {
+        this.image = '/assets/images/Kinky/kink-oily-03.png'
+        this.Mid.visivel = true;
+        this.Cream.visivel = true;
+        this.After.visivel = true;
+        this.Jelly.visivel = true;
+        this.Tonic.visivel = false;
+        this.Mask.visivel = true;
+        this.Treatment.visivel = false;
+        this.Leave.visivel = false;
+        this.Milk.visivel = false;
+      }
     }
+
+    if (Kinky && Oil) {
+      if (Breakage || resistance || due || Nutrition) {
+        this.image = '/assets/images/Kinky/kink-oily-02.png'
+        this.Mid.visivel = true;
+        this.Cream.visivel = false;
+        this.After.visivel = true;
+        this.Jelly.visivel = true;
+        this.Tonic.visivel = true;
+        this.Mask.visivel = true;
+        this.Treatment.visivel = true;
+        this.Leave.visivel = false;
+        this.Milk.visivel = false;
+      }
+    }
+
     const resultTreze = ['Kinky', 'Oil', 'combing', 'control', 'curls', 'moisturization', 'shine']
     const todosOsValoresTreze = resultTreze.every(valor => this.resultService.Resultado.includes(valor))
     if (todosOsValoresTreze) {
@@ -362,51 +371,56 @@ export class Result1Component implements OnInit {
       this.Leave.visivel = false;
       this.Milk.visivel = false;
     }
-  }
 
 
     //Kinky-Balanced
-    verificarSexto(){
-      if (this.Kinky && this.Balanced && this.growth || this.Thermal) {
-          this.image = '/assets/images/Kinky/kink-balanced-03.png'
-          this.Mid.visivel = true;
-          this.Cream.visivel = false;
-          this.After.visivel = true;
-          this.Jelly.visivel = true;
-          this.Tonic.visivel = true;
-          this.Mask.visivel = true;
-          this.Treatment.visivel = false;
-          this.Leave.visivel = true;
-          this.Milk.visivel = true;
-        }else if (this.Kinky && this.Balanced && this.Breakage || this.resistance || this.due || this.Nutrition) {
-          this.image = '/assets/images/Kinky/kink-balanced-02.png'
-          this.Mid.visivel = true;
-          this.Cream.visivel = false;
-          this.After.visivel = true;
-          this.Jelly.visivel = true;
-          this.Tonic.visivel = false;
-          this.Mask.visivel = true;
-          this.Treatment.visivel = false;
-          this.Leave.visivel = true;
-          this.Milk.visivel = true;
-        }
-      
 
-      const resultDezesseis = ['Kinky', 'Balanced', 'combing', 'control', 'curls', 'moisturization', 'shine']
-      const todosOsValoresDezesseis = resultDezesseis.every(valor => this.resultService.Resultado.includes(valor))
-      if (todosOsValoresDezesseis) {
-        this.image = '/assets/images/Kinky/kink-balanced-01.png'
+    if (Kinky && Balanced) {
+      if (growth || Thermal) {
+        this.image = '/assets/images/Kinky/kink-balanced-03.png'
         this.Mid.visivel = true;
-        this.Cream.visivel = true;
+        this.Cream.visivel = false;
+        this.After.visivel = true;
+        this.Jelly.visivel = true;
+        this.Tonic.visivel = true;
+        this.Mask.visivel = true;
+        this.Treatment.visivel = false;
+        this.Leave.visivel = true;
+        this.Milk.visivel = true;
+      }
+    }
+
+    if (Kinky && Balanced) {
+      if (Breakage || resistance || due || Nutrition) {
+        this.image = '/assets/images/Kinky/kink-balanced-02.png'
+        this.Mid.visivel = true;
+        this.Cream.visivel = false;
         this.After.visivel = true;
         this.Jelly.visivel = true;
         this.Tonic.visivel = false;
         this.Mask.visivel = true;
-        this.Treatment.visivel = true;
+        this.Treatment.visivel = false;
         this.Leave.visivel = true;
-        this.Milk.visivel = false;
+        this.Milk.visivel = true;
       }
     }
+
+    const resultDezesseis = ['Kinky', 'Balanced', 'combing', 'control', 'curls', 'moisturization', 'shine']
+    const todosOsValoresDezesseis = resultDezesseis.every(valor => this.resultService.Resultado.includes(valor))
+    if (todosOsValoresDezesseis) {
+      this.image = '/assets/images/Kinky/kink-balanced-01.png'
+      this.Mid.visivel = true;
+      this.Cream.visivel = true;
+      this.After.visivel = true;
+      this.Jelly.visivel = true;
+      this.Tonic.visivel = false;
+      this.Mask.visivel = true;
+      this.Treatment.visivel = true;
+      this.Leave.visivel = true;
+      this.Milk.visivel = false;
+    }
+
+  }
 
 
   expandDivUm() {
@@ -631,7 +645,7 @@ export class Result1Component implements OnInit {
 
   }
 
+
+
 }
-
-
 
