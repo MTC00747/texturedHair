@@ -1,7 +1,8 @@
 .container {
-    background: url('/assets/images/fundo-resultado-mobile.jpg');
+    background: url('/assets/images/desktop.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
 }
 
 .block-one {
@@ -12,15 +13,10 @@
     height: 100px;
 }
 
-.Logo-one {
-    width: 240px;
+.block-one  > img {
+    width: 180px;
+    margin-left: 85%;
 }
-
-.Logo-two {
-    margin-left: 50px;
-    width: 240px;
-}
-
 .block-two {
     margin-top: 50px;
 }
@@ -43,7 +39,7 @@
 }
 
 .icones>img {
-    width: 220px;
+    width: 160px;
     margin-top: 20px;
     margin: 50px;
     filter: grayscale(100%);
@@ -65,14 +61,10 @@
     justify-content: space-between;
 }
 
-
-
-.Back {
-    background: transparent;
-    border: 0;
-    color: black;
-    font-family: 'Barlow', sans-serif;
-    margin-bottom: 40px;
+.container img {
+    float: right;
+    margin-right: 40px;
+    width: 140px;
 }
 
 
@@ -174,7 +166,7 @@
     .icones {
         margin-top: 0px;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
     }
 
     .icones>img {

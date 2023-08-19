@@ -15,7 +15,7 @@ export class PagFormComponent {
   }
   NextPage(){
     if(this.email === ''){
-      alert('Preencha todos os campos!')
+      alert('Fill in all fields!')
     }else{
       this.Route.navigate(['Escolha-de-Cabelo'])
     }

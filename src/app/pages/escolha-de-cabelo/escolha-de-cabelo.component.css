@@ -2,6 +2,7 @@
     background: url('/assets/images/fundo-resultado-mobile.jpg');
     background-size: cover;
     background-position: center;
+    height: 100vh;
 }
 
 .block-one {
@@ -13,8 +14,9 @@
 }
 
 .block-one>img {
+    margin-left: 85%;
     margin-top: 40px;
-    width: 240px;
+    width: 180px;
 }
 
 
@@ -36,11 +38,11 @@
 }
 
 .icones {
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 .icones>img {
-    width: 220px;
+    width: 160px;
     margin-top: 20px;
     margin: 50px;
     filter: grayscale(100%);
@@ -62,15 +64,12 @@
     justify-content: space-between;
 }
 
-.Image-one {
-    width: 340px;
-}
-
-.Image-two {
-    width: 250px;
+.container>img {
+    width: 140px;
+    display: flex;
+    float: right;
     margin-right: 20px;
 }
-
 
 @media (max-width: 768px) {
     .block-one {

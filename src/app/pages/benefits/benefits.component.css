@@ -1,11 +1,12 @@
 .container {
-    background: url('/assets/images/fundo-resultado-mobile.jpg');
+    background: url('/assets/images/desktop.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
 .block-one {
@@ -47,7 +48,7 @@
 }
 
 .icones>img {
-    width: 120px;
+    width: 80px;
     filter: grayscale(100%);
 }
 
@@ -69,7 +70,8 @@
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 50px;
-    color: black;
+    background-color: black;
+    color: rgb(253, 253, 253);
     width: 200px;
     text-align: center;
     font-family: 'Barlow', sans-serif;
@@ -81,6 +83,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        height: 100vh;
     }
 
     .block-one {
@@ -105,20 +108,21 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        width: 80%;
+        width: 45%;
+        margin-top: 2%;
         height: 400px;
-        margin-left: 0px;
-
+        
+        margin-left: 1%;
         flex-wrap: wrap;
     }
 
     .icones {
 
-        width: 10%;
-        padding: 40px;
+        width: 24%;
+        padding: 0px;
         display: flex;
         flex-wrap: wrap;
-        gap: 20px;
+        gap: 0px;
     }
 
     .icones>img {
@@ -140,12 +144,13 @@
     }
 
     .next {
-        margin-top: 260px;
+        margin-top: 70px;
         padding: 10px;
         border-radius: 10px;
         width: 200px;
         text-align: center;
         font-family: 'Barlow', sans-serif;
+        margin-right: 4%;
     }
 }
 
@@ -313,9 +318,9 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 40vh;
+        width: 35vh;
         height: 700px;
-        margin-right: 130px;
+        margin-right: 160px;
         flex-wrap: wrap;
     }
 

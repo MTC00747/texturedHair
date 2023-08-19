@@ -1,1 +1,288 @@
-<p>result-dois works!</p>
+<div class="container">
+
+    <div class="result">
+
+        <img src={{image}} />
+
+    </div>
+
+
+
+    <div class="Acoordeon">
+        <h2>See the products used in the formula</h2>
+        <dIV [ngStyle]="Mid" *ngIf="Mid.visivel" class="mid-shampoo">
+
+            <button (click)="expandDivUm()" class="mid">MILD SHAMPOO - SCALP & HAIR CARING</button>
+
+            <div *ngIf="TextoUm" class="texto">
+
+                <p><strong> The formula that gives you long-lasting clean sensation, for less frequent hair washing.
+                    </strong>
+                    <br>
+                    <br>
+                    <span>- SymControl® Scalp -</span> Produce by blue biotechnology based on a microalgae from
+                    Mediterranean Sea
+                    that visibly reduces sebum levels on the scalp & leaves it with a long-lasting clean sensation, for
+                    less frequent hair washing.
+                    <br>
+                    <br>
+                    <span>- Frescolat® ML –</span> this ingredient instantly refreshes the scalp with a pleasant mild
+                    cooling
+                    sensation.
+                    <br>
+                    <br>
+                    <span> - SymSoft® Scalp –</span> it is a smart complex with outstanding anti-itch efficacy on the
+                    scalp even in
+                    shampoo. Improves the hair fiber resistance and protects the hair fiber keratin from chemical
+                    damage.
+                    <br>
+                    <br>
+                    <span>- Hydroviton® Hair –</span> innovative arginine cationic complex specially developed to
+                    provide a high
+                    level of moisturizing. It provides softness and hydration, better combability, and smooth effect.
+                </p>
+
+            </div>
+
+        </dIV>
+
+        <dIV [ngStyle]="After" *ngIf="After.visivel" class="after">
+
+            <button (click)="expandDivDois()" class="mid">DAY AFTER</button>
+
+            <div *ngIf="TextoDois" class="texto">
+
+                <p><strong>A formulation designed to refresh and revive your texture.</strong>
+                    <br>
+                    <br>
+                    <span>- SymHair® Shape & Color -</span> an adaptogenic technology that retains curl shape and
+                    protects color
+                    against fading. It will also help strengthen hair, prevent breakage, and reduces frizz.
+                    <br>
+                    <br>
+                    <span>- Hydroviton® Hair –</span> innovative arginine cationic complex specially developed to
+                    provide a high
+                    level of moisturizing. It provides softness and hydration, better combability, and smooth effect.
+                </p>
+
+            </div>
+
+        </dIV>
+
+        <dIV [ngStyle]="Treatment" *ngIf="Treatment.visivel" class="Treatment">
+
+            <button (click)="expandDivTres()" class="mid">PRE & POST TREATMENT</button>
+
+            <div *ngIf="TextoTres" class="texto">
+
+                <p><strong>The formula that gives you long-lasting clean sensation, for less frequent hair washing.
+                    </strong>
+                    <br>
+                    <br>
+                    <span>- SymControl® Scalp - </span> Produce by blue biotechnology based on a microalgae from
+                    Mediterranean Sea
+                    that visibly reduces sebum levels on the scalp & leaves it with a long-lasting clean sensation, for
+                    less frequent hair washing.
+                    <br>
+                    <br>
+                    <span>- Frescolat® ML –</span> this ingredient instantly refreshes the scalp with a pleasant mild
+                    cooling
+                    sensation.
+                    <br>
+                    <br>
+                    <span>- SymSoft® Scalp –</span> it is a smart complex with outstanding anti-itch efficacy on the
+                    scalp even in
+                    shampoo. Improves the hair fiber resistance and protects the hair fiber keratin from chemical
+                    damage.
+                </p>
+
+            </div>
+
+        </dIV>
+
+
+
+        <dIV [ngStyle]="Leave" *ngIf="Leave.visivel" class="Leave">
+
+            <button (click)="expandDivQuatro()" class="mid">LEAVE-ON</button>
+
+            <div *ngIf="TextoQuatro" class="texto">
+
+                <p><strong> The perfect leave-on for a textured hair detangling besides shape maintenance and the best curvature
+                    definition. Anti shrinkage effect, and also protected from thermal damage.</strong>
+                    <br>
+                    <br>
+                    <span> - SymHair® Thermo - </span>natural thermal protector and humidity shield that can be used as
+                    silicone
+                    replacer
+                    <br>
+                    <br>
+                    <span>- SymOleo® Nutri Intense -</span> exclusive combination of butters and African oils for
+                    perfect curls
+                    definition.
+                    <br>
+                    <br>
+                    <span> - SymHair® Shape & Color -</span> an adaptogenic technology that retains curl shape and
+                    protects against
+                    color fading. It will also help strengthen hair, prevent breakage, and reduces frizz.
+                    <br>
+                    <br>
+                    - Hydromoist™ Blackcurrant - a cationic complex with blackcurrant and coconut oils and vitamins. It
+                    provides softness and moisturization, better combability, and excellent volume and frizz control
+                    even in situations of high humidity, besides the anti-shrinkage effect.
+                </p>
+
+            </div>
+
+        </dIV>
+
+
+
+
+        <dIV [ngStyle]="Mask" *ngIf="Mask.visivel" class="Mask">
+
+            <button (click)="expandDivQuinto()" class="mid">CONDITIONER MASK</button>
+
+            <div *ngIf="TextoQuinto" class="texto">
+
+                <p><strong>It’s a multifunctional mask for your hair chronogram! This mask will moisturize, nourish and restore
+                    your textured hair.</strong>
+                    <br>
+                    <br>
+                    - SymProt’in™ Oat - natural biomimetic peptide that penetrate deep into the hair cortex, link with
+                    hair bonds and repair the fiber, , improving the hair resistance.
+                    <br>
+                    <br>
+                    <span>- SymHair® Restore - </span>a smart protein that repairs selectively the damaged areas of the
+                    hair fiber,
+                    improve the resistant to breakage and repairs split ends.
+                    <br>
+                    <br>
+                    <span> - SymOleo® Nutri Intense -</span> exclusive combination of butters and African oils for
+                    perfect curls
+                    definition.
+                    <br>
+                    <br>
+                    <span>- SymHair® Shape & Color -</span> an adaptogenic technology that retains curl shape and
+                    protects color
+                    against fading. It will also help strengthen hair, prevent breakage, and reduces frizz.
+                </p>
+
+            </div>
+
+        </dIV>
+
+
+
+        <dIV [ngStyle]="Cream" *ngIf="Cream.visivel" class="Cream">
+
+            <button (click)="expandDivSexto()" class="mid">STYLING CREAM</button>
+
+            <div *ngIf="TextoSexto" class="texto">
+
+                <p><strong>A light styling gel-cream designed for keeping your hair with defined shape, far away from frizz and
+                    shrinkage effect and protected against thermal damage. A multifunctional product for your styling
+                    day routine!</strong>
+                    <br>
+                    <br>
+                    <span>- SymHair® Thermo - </span> natural thermal protector and humidity shield that can be used as
+                    silicone
+                    replacer.
+                    <br>
+                    <br>
+                    <span>- SymHair® Shape & Color - </span>an adaptogenic technology that retains curl shape and
+                    protects against
+                    color fading. It will also help strengthen hair, prevent breakage, and reduces frizz.
+                    <br>
+                    <br>
+                    - sHydromoist™ Blackcurrant - a cationic complex with blackcurrant and coconut oils and vitamins. It
+                    provides softness and moisturization, better combability, and excellent volume and frizz control
+                    even in situations of high humidity, besides the anti-shrinkage effect.
+                </p>
+
+            </div>
+
+        </dIV>
+
+
+
+        <dIV [ngStyle]="Jelly" *ngIf="Jelly.visivel" class="JELLY">
+
+            <button (click)="expandDivSetimo()" class="mid">MODELING JELLY - ULTIMATE DEFINITION</button>
+
+            <div *ngIf="TextoSetimo" class="texto">
+
+                <p><strong>To be applied on the top of your combing cream or styling gel cream, this modeling jelly will enhance
+                    your hair shape definition and keep in the best look all days long.</strong>
+                    <br>
+                    <br>
+                    <span>- SymHair® Thermo</span> - natural thermal protector and humidity shield that can be used as
+                    silicone
+                    replacer.
+                </p>
+
+            </div>
+
+        </dIV>
+
+
+
+        <dIV [ngStyle]="Milk" *ngIf="Milk.visivel" class="MILK">
+
+            <button (click)="expandDivOito()" class="mid">PRE-WASHING MILK SPRAY</button>
+
+            <div *ngIf="TextoOito" class="texto">
+
+                <p><strong>A sprayable nourishing and moisturizing hair protector. It should be applied before shampooing for
+                    keeping your hair protected from the surfactants.</strong>
+                    <br>
+                    <br>
+                    - SymProt’in™ Oat - natural biomimetic peptide that penetrate deep into the hair cortex, link with
+                    hair bonds and repair the fiber, , improving the hair resistance. SymHair® Shape & Color - an
+                    adaptogenic technology that retains curl shape and protects against color fading. It will also help
+                    strengthen hair, prevent breakage, and reduces frizz.
+                    <br>
+                    <br>
+                    <span> - SymOleo® Nutri Intense -</span> exclusive combination of butters and African oils for
+                    perfect curls
+                    definition.
+                    <br>
+                    <br>
+                    - Hydromoist™ Blackcurrant - a cationic complex with blackcurrant and coconut oils and vitamins. It
+                    provides softness and moisturization, better combability, and excellent volume and frizz control
+                    even in situations of high humidity, besides the anti-shrinkage effect.
+                </p>
+
+            </div>
+
+        </dIV>
+
+
+
+        <dIV [ngStyle]="Tonic" *ngIf="Tonic.visivel" class="Tonic">
+
+            <button (click)="expandDivNono()" class="mid">TONIC INFUSION ROOT REVITALIZATION</button>
+
+            <div *ngIf="TextoNono" class="texto">
+
+                <p><strong> Rebalancing the hair cycle, revitalize the follicles, anti hair loss and increase the scalp
+                    comfort.</strong> 
+                    <br>
+                    <br>
+                    <span>- SymHair® Force 1631 -</span> a complete solution for anti hair loss and anti hair breakage.
+                    This active
+                    is obtained by blue biotechnology based on a micro algae from Tahitian sea.
+                    <br>
+                    <span> - SymControl® Scalp -</span> Produce by blue biotechnology based on a microalgae from
+                    Mediterranean Sea
+                    that visibly reduces sebum levels on the scalp & leaves it with a long-lasting clean sensation, for
+                    less frequent hair washing
+                </p>
+
+            </div>
+
+        </dIV>
+        <Button class="mid">REQUEST A CONTACT</Button>
+    </div>
+
+</div>

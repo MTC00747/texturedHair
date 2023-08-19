@@ -3,13 +3,14 @@
     width: 100%;
     height: 100vh;
     display: flex;
-    justify-content: center;
-    background: url('/assets/images/fundo-resultado-mobile.jpg');
+    justify-content: flex-start;
+    align-items: center;
+    background: url('/assets/images/desktop.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.bloco-um {
+.bloco-um {width: 80%;
     margin-left: 150px;
     display: flex;
     flex-direction: column;
@@ -17,21 +18,34 @@
 }
 
 .bloco-um>img {
-    margin-top: 30px;
+    width:160px;
+    margin-left: 80%;
 }
-
+.titulo{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    align-items: center;
+}
+.titulo > h3{
+    font-family: 'Barlow', sans-serif;
+}
+.titulo >img {
+    width: 140px;
+}
 .form {
     padding: 20px;
-    margin-top: 50px;
-    height: 500px;
-    width: 50vh;
-    border: 1px solid black;
+    margin-top: 20px;
+    height: 450px;
+    width: 60vh;
+    border: 1px solid rgb(255, 255, 255);
     border-radius: 20px;
 }
 
 form {
     display: flex;
     flex-direction: column;
+    height: 440px;
 }
 
 label {
@@ -41,65 +55,20 @@ label {
 }
 
 input {
+    border: 1px solid white;
     border-radius: 4px;
 }
 
-/*Bloco 2*/
-.bloco-dois {
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 40px;
-}
-
-.bloco-dois>img {
-    width: 165px;
-}
-
-.text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.text>h3 {
-    margin-top: 20px;
-    font-family: 'Barlow', sans-serif;
-    font-size: 1.9em;
-    width: 70%;
-    text-align: center;
-}
-
-.paragrafo {
-    margin-top: 20px;
-    width: 80%;
-    font-size: 1em;
-    font-family: 'Barlow', sans-serif;
-}
-
-ol {
-    margin-left: 40px;
-}
-
-li {
-    font-family: 'Barlow', sans-serif;
-}
 
 /*Bloco 3*/
 .bloco-tres{
-    margin-top: 140px;
     width: 70%;
-    display: flex;
-    justify-content: space-between;
-}
-.bloco-tres>img {
-    width: 200px;
 }
 .bloco-tres>button {
     width: 150px;
-    margin-top: 30px;
+    margin-top: 20px;
     height: 40px;
+    margin-left: 40%;
     font-family: 'Barlow', sans-serif;
     background-color: black;
     color: white;
@@ -239,7 +208,7 @@ li {
         margin-top: 20px;
         height: 500px;
         width: 38vh;
-        border: 1px solid black;
+        border: 1px solid rgb(253, 253, 253);
         border-radius: 20px;
     }
     input{
@@ -256,6 +225,7 @@ li {
 
     input {
         border-radius: 4px;
+        border:1px solid white;
     }
 
     /*Bloco 2*/

@@ -13,7 +13,7 @@ export class Result1Component {
     visivel: true,
     width: '55vh',
     height: '25px',
-    backgroundColor: 'transparent',
+    backgroundColor: 'rgba(213, 199, 190, 0.3)',
     borderRadius: '10px 10px 10px 10px',
     transition: 'width 0.5s, height 0.5s',
     border: '0.7px solid white'
@@ -22,7 +22,7 @@ export class Result1Component {
     visivel: true,
     width: '55vh',
     height: '25px',
-    backgroundColor: 'transparent',
+    backgroundColor: 'rgba(213, 199, 190, 0.3)',
     borderRadius: '10px 10px 10px 10px',
     transition: 'width 0.5s, height 0.5s',
 
@@ -32,7 +32,7 @@ export class Result1Component {
     visivel: true,
     width: '55vh',
     height: '25px',
-    backgroundColor: 'transparent',
+    backgroundColor: 'rgba(213, 199, 190, 0.3)',
     borderRadius: '10px 10px 10px 10px',
     transition: 'width 0.5s, height 0.5s',
 
@@ -42,7 +42,7 @@ export class Result1Component {
     visivel: true,
     width: '55vh',
     height: '25px',
-    backgroundColor: 'transparent',
+    backgroundColor: 'rgba(213, 199, 190, 0.3)',
     borderRadius: '10px 10px 10px 10px',
     transition: 'width 0.5s, height 0.5s',
 
@@ -52,7 +52,7 @@ export class Result1Component {
     visivel: true,
     width: '55vh',
     height: '25px',
-    backgroundColor: 'transparent',
+    backgroundColor: 'rgba(213, 199, 190, 0.3)',
     borderRadius: '10px 10px 10px 10px',
     transition: 'width 0.5s, height 0.5s',
 
@@ -63,7 +63,7 @@ export class Result1Component {
     visivel: true,
     width: '55vh',
     height: '25px',
-    backgroundColor: 'transparent',
+    backgroundColor: 'rgba(213, 199, 190, 0.3)',
     borderRadius: '10px 10px 10px 10px',
     transition: 'width 0.5s, height 0.5s',
 
@@ -73,7 +73,7 @@ export class Result1Component {
     visivel: true,
     width: '55vh',
     height: '25px',
-    backgroundColor: 'transparent',
+    backgroundColor: 'rgba(213, 199, 190, 0.3)',
     borderRadius: '10px 10px 10px 10px',
     transition: 'width 0.5s, height 0.5s',
 
@@ -84,7 +84,7 @@ export class Result1Component {
     visivel: true,
     width: '55vh',
     height: '25px',
-    backgroundColor: 'transparent',
+    backgroundColor: 'rgba(213, 199, 190, 0.3)',
     borderRadius: '10px 10px 10px 10px',
     transition: 'width 0.5s, height 0.5s',
 
@@ -94,7 +94,7 @@ export class Result1Component {
     visivel: true,
     width: '55vh',
     height: '25px',
-    backgroundColor: 'transparent',
+    backgroundColor: 'rgba(213, 199, 190, 0.3)',
     borderRadius: '10px 10px 10px 10px',
     transition: 'width 0.5s, height 0.5s',
 
@@ -229,7 +229,7 @@ export class Result1Component {
 
     if (coily && Oil) {
       if (growth || Thermal) {
-        this.image = '/assets/images/Coily-oily-03.png'
+        this.image = '/assets/images/Coily/Coily-oily-03.png'
         this.Mid.visivel = true;
         this.Cream.visivel = false;
         this.After.visivel = true;
@@ -244,7 +244,7 @@ export class Result1Component {
 
     if (coily && Oil) {
       if (Breakage || resistance || due || Nutrition) {
-        this.image = '/assets/images/Coily-oily-02.png'
+        this.image ='/assets/images/Coily/Coily-oily-02.png'
         this.Mid.visivel = true;
         this.Cream.visivel = false;
         this.After.visivel = true;
@@ -261,7 +261,6 @@ export class Result1Component {
     const todosOsValoresSeven = resultSeven.every(valor => this.resultService.Resultado.includes(valor))
     if (todosOsValoresSeven) {
       this.image = '/assets/images/Coily/coily-oily-01.png'
-      this.image = '/assets/images/Coily-oily-02.png'
       this.Mid.visivel = true;
       this.Cream.visivel = true;
       this.After.visivel = true;
@@ -279,7 +278,7 @@ export class Result1Component {
 
     if (coily && Balanced) {
       if (growth || Thermal) {
-        this.image = '/assets/images/Coily-balanced-03.png'
+        this.image = '/assets/images/Coily/Coily-balanced-03.png'
         this.Mid.visivel = true;
         this.Cream.visivel = false;
         this.After.visivel = true;
@@ -294,7 +293,7 @@ export class Result1Component {
 
     if (coily && Balanced) {
       if (Breakage || resistance || due || Nutrition) {
-        this.image = '/assets/images/Coily-balanced-02.png'
+        this.image = '/assets/images/Coily/Coily-balanced-02.png'
         this.Mid.visivel = true;
         this.Cream.visivel = false;
         this.After.visivel = true;

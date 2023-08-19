@@ -30,8 +30,8 @@ button {
         /* Ajusta a imagem para cobrir todo o elemento */
         background-repeat: no-repeat;
     }
-    button {
-        margin-top: 640px;
+    button{
+        margin-top: 740px;
         background: black;
         color: white;
         border: 0;
@@ -55,14 +55,14 @@ button {
         background-repeat: no-repeat;
     }
     button {
-        margin-top: 600px;
+        margin-top: 700px;
         background: black;
         color: white;
         border: 0;
         padding: 20px;
         width: 40vh;
         display: inline-block;
-        margin-left: 1000px;
+        margin-left: 1200px;
         font-size: 1.4em;
         font-family: 'Barlow', sans-serif;
      
@@ -103,7 +103,7 @@ button {
     }
 
     button {
-        margin-top: 630px;
+        margin-top: 750px;
         background: black;
         color: white;
         border: 0;
