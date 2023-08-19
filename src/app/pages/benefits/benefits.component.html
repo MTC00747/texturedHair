@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="block-one">
+        <img class="Logo-one" src="/assets/Logo/logo-symrise.png">
+    </div>
+    <div class="titulo">
+        <h2>SELECT YOUR HAIR GOALS</h2>
+        <SPAN>Choose up to 5</SPAN>
+    </div>
+    <div class="block-two">
+        <div class="icones" *ngFor="let icone of icones; let i = index">
+            <img (click)="Beneficio(i)" [src]="icone.url" [ngClass]="{ 'active': icone.active}" >
+        </div>
+
+    </div>
+    <Button class="next" (click)="nextPage()" [disabled]="!buttonsEnabled" >Result</Button>
+
+</div>

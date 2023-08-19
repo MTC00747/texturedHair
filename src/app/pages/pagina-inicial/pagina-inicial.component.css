@@ -1,0 +1,119 @@
+.container {
+    height: 100vh;
+    width: 100%;
+    background: url('/assets/images/bg-1.png');
+    background-size: cover;
+    /* Ajusta a imagem para cobrir todo o elemento */
+    background-repeat: no-repeat;
+}
+button {
+    margin-top: 690px;
+    background: black;
+    color: white;
+    border: 0;
+    padding: 20px;
+    width: 40vh;
+    display: inline-block;
+    margin-left: 1250px;
+    font-size: 1.4em;
+    font-family: 'Barlow', sans-serif;
+    border-radius: 15px;
+ 
+    /* Define margens automáticas */
+}
+@media (max-width: 1600px){
+    .container {
+        height: 100vh;
+        width: 100vw;
+        background: url('/assets/images/bg-1.png');
+        background-size: cover;
+        /* Ajusta a imagem para cobrir todo o elemento */
+        background-repeat: no-repeat;
+    }
+    button {
+        margin-top: 640px;
+        background: black;
+        color: white;
+        border: 0;
+        padding: 20px;
+        width: 40vh;
+        display: inline-block;
+        margin-left: 1000px;
+        font-size: 1.4em;
+        font-family: 'Barlow', sans-serif;
+     
+        /* Define margens automáticas */
+    }
+}
+@media (min-width: 1366px){
+    .container {
+        height: 100vh;
+        width: 100vw;
+        background: url('/assets/images/bg-1.png');
+        background-size: cover;
+        /* Ajusta a imagem para cobrir todo o elemento */
+        background-repeat: no-repeat;
+    }
+    button {
+        margin-top: 600px;
+        background: black;
+        color: white;
+        border: 0;
+        padding: 20px;
+        width: 40vh;
+        display: inline-block;
+        margin-left: 1000px;
+        font-size: 1.4em;
+        font-family: 'Barlow', sans-serif;
+     
+        /* Define margens automáticas */
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        height: 700px;
+        width: 100%;
+        background: url('/assets/images/bg-1.png');
+        background-size: cover;
+        /* Ajusta a imagem para cobrir todo o elemento */
+        background-repeat: no-repeat;
+    }
+    button {
+        margin-top: 630px;
+        background: black;
+        color: white;
+        border: 0;
+        padding: 15px;
+        width: 80%;
+        display: inline-block;
+        margin-left: 80px;
+        font-size: 1.4em;
+     
+        /* Define margens automáticas */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        height: 100vh;
+        width: 100%;
+        background: url('/assets/images/mobile.jpg');
+        background-size: cover;
+        /* Ajusta a imagem para cobrir todo o elemento */
+    }
+
+    button {
+        margin-top: 630px;
+        background: black;
+        color: white;
+        border: 0;
+        padding: 15px;
+        width: 80%;
+        display: inline-block;
+        margin-left: 50px;
+        font-size: 1.4em;
+        /* Define margens automáticas */
+    }
+}
+
+/* Adicione aqui outros estilos para dispositivos móveis */

@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="block-one">
+        <img src="/assets/Logo/logo-symrise.png">
+    </div>
+    <div class="block-two">
+      
+        <div class="titulo">
+            <h2>HOW IS YOUR NATURAL SCALP TYPE?</h2>
+        </div>
+        <div class="icones">
+            <img  src="/assets/images/oil-scalp-on.png" [ngClass]="{ 'active': coilyActive }"
+                (click)="toggleCoily()">
+            <img src="/assets/images/balanced-scalp-on.png" [ngClass]="{ 'active': curlyActive }"
+                (click)="toggleCurly()">
+        </div>
+    </div>
+
+</div>

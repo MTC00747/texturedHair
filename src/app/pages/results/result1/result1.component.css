@@ -1,0 +1,104 @@
+.container {
+    background: url('/assets/images/fundo-resultado-mobile.jpg');
+    background-size: cover;
+    height: 120vh;
+    width: 100%;
+}
+
+.result {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.result>img {
+    width: 1200px;
+
+}
+
+@media (max-width: 480px) {
+    .container {
+        background: url('/assets/images/fundo-resultado-mobile.jpg');
+        background-size: cover;
+        height: 1100px;
+        width: 100%;
+    }
+
+    .result {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+
+    .result>img {
+        width: 400px;
+
+    }
+
+    .Acoordeon {
+        height: 300px;
+   
+      
+        margin-top: 20px;
+           
+    }
+
+    button {
+       border: 1px solid white;
+        background-color: white;
+        padding: 15px;
+        border-radius: 6px;
+     
+    
+    }
+    .mid {
+        padding: 5px;
+        width: 55vh;
+    }
+
+    .after {
+
+        margin: 5px;
+    }
+    .mid-shampoo{
+        margin: 5px;
+
+    }
+    .Treatment
+    {
+        margin: 5px;
+    }
+    .Leave{
+        margin: 5px;
+    }
+    .Mask{
+        margin: 5px;
+    }
+    .Cream{
+        margin: 5px;
+    }
+    .JELLY{
+        margin: 5px;
+    }
+    .MILK{
+        margin: 5px;
+        border: 1px solid white;
+    }
+    .Tonic{
+        margin: 5px;
+    }
+    .texto>p {padding: 10px;
+        margin-top: 10px;
+        margin-left: 05px;
+        color: rgb(8, 8, 8);
+        width: 85%;
+        font-family:  'Barlow', sans-serif;;
+    }
+    span{
+        font-weight: bold;
+    }
+    strong{
+        font-size: 1.1em;
+    }
+
+}
