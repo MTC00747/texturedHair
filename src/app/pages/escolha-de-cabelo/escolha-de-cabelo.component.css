@@ -3,6 +3,7 @@
     background-size: cover;
     background-position: center;
     height: 100vh;
+    width: 100vw;
 }
 
 .block-one {
@@ -72,6 +73,10 @@
 }
 
 @media (max-width: 768px) {
+    .container{
+        height: 100vh;
+        width: 100vw;
+    }
     .block-one {
 
         display: flex;
@@ -138,6 +143,10 @@
 
 
 @media (max-width: 480px) {
+    .container{
+        height: 100vh;
+        width: 100vw;
+    }
     .block-one {
 
         display: flex;

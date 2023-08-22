@@ -2,7 +2,7 @@
     background: url('/assets/images/resultDesktop.jpg');
     background-size: cover;
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -105,6 +105,8 @@ strong {
 
 @media (max-width: 480px) {
     .container {
+        height: 100vh;
+        width: 100vw;
         background: url('/assets/images/fundo-resultado-mobile.jpg');
         background-size: cover;
         height: 1100px;
@@ -136,7 +138,7 @@ strong {
         padding: 15px;
         border-radius: 6px;
         width: 55vh;
-        font-family:  'Barlow', sans-serif;
+        font-family: 'Barlow', sans-serif;
     }
 
     .mid {

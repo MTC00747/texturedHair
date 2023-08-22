@@ -1,20 +1,24 @@
 .container {
     background: url('/assets/images/desktop.jpg');
- background-size: cover;
- height: 1000px;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
 
 }
-.bloco-dois{
+
+.bloco-dois {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.bloco-dois > img {
+
+.bloco-dois>img {
     margin-left: 80%;
     padding-top: 40px;
     width: 180px;
 }
+
 .titulo {
     justify-content: center;
     display: flex;
@@ -22,24 +26,28 @@
     padding-top: 20px;
     margin-bottom: 10px;
 }
-.titulo > h3{
+
+.titulo>h3 {
     margin-left: 20px;
     font-family: 'Barlow', sans-serif;
     font-size: 1.5em;
     width: 60%;
     text-align: center;
 }
+
 .titulo>img {
     width: 200px;
 }
-.text{
+
+.text {
     margin-top: 1%;
     margin-left: 10%;
-    display: flex; 
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
-.text > p {
+
+.text>p {
     margin-top: 10px;
     width: 90%;
     font-size: 0.9em;
@@ -57,18 +65,21 @@ li {
     font-family: 'Barlow', sans-serif;
     font-weight: bold;
 }
-.bloco-tres{
+
+.bloco-tres {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.bloco-tres >img {
+
+.bloco-tres>img {
     width: 170px;
     margin-top: 5%;
     margin-left: 83%;
 }
+
 .bloco-tres>button {
     width: 150px;
     margin-top: 30px;
@@ -84,20 +95,24 @@ li {
 @media (max-width: 480px) {
     .container {
         background: url('/assets/images/fundo-resultado-mobile.jpg');
-     background-size: cover;
-     height: 1000px;
+        background-size: cover;
+        height: 100vh;
+        width: 100vw;
 
     }
-    .bloco-dois{
+
+    .bloco-dois {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-    .bloco-dois > img {
+
+    .bloco-dois>img {
         padding-top: 20px;
         width: 100px;
     }
+
     .titulo {
         justify-content: center;
         display: flex;
@@ -105,23 +120,27 @@ li {
         padding-top: 20px;
         margin-bottom: 10px;
     }
-    .titulo > h3{
+
+    .titulo>h3 {
         margin-left: 20px;
         font-family: 'Barlow', sans-serif;
         font-size: 1.5em;
         width: 60%;
         text-align: center;
     }
+
     .titulo>img {
         width: 100px;
     }
-    .text{
+
+    .text {
         margin-left: 70px;
-        display: flex; 
+        display: flex;
         flex-direction: column;
         align-items: flex-start;
     }
-    .text > p {
+
+    .text>p {
         margin-top: 10px;
         width: 90%;
         font-size: 0.9em;
@@ -139,16 +158,19 @@ li {
         font-family: 'Barlow', sans-serif;
         font-weight: bold;
     }
-    .bloco-tres{
+
+    .bloco-tres {
         margin-top: 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .bloco-tres >img {
+
+    .bloco-tres>img {
         width: 170px;
     }
+
     .bloco-tres>button {
         width: 150px;
         margin-top: 30px;
