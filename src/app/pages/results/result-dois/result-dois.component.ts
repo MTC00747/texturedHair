@@ -132,293 +132,248 @@ export class ResultDoisComponent {
 
     const growth = this.resultService.Resultado.includes('growth')
     const Thermal = this.resultService.Resultado.includes('Thermal')
-    
-    if (curly && Oil) {
-      if (Breakage || resistance || due || Nutrition) {
-        this.image = '/assets/images/Curly-oily-02.png'
-        this.Mid.visivel = true;
-        this.Cream.visivel = true;
-        this.After.visivel = true;
-        this.Jelly.visivel = true;
-        this.Tonic.visivel = false;
-        this.Mask.visivel = true;
-        this.Treatment.visivel = true;
-        this.Leave.visivel = false;
-        this.Milk.visivel = false;
-      }
 
-    if (curly && Oil) {
-      if (growth || Thermal) {
-        this.image = '/assets/images/Curly-oily-d-03.png'
-        this.Mid.visivel = true;
-        this.Cream.visivel = true;
-        this.After.visivel = true;
-        this.Jelly.visivel = true;
-        this.Tonic.visivel = true;
-        this.Mask.visivel = true;
-        this.Treatment.visivel = true;
-        this.Leave.visivel = false;
-        this.Milk.visivel = false;
-      }
+    const combing = this.resultService.Resultado.includes('combing')
+    const control = this.resultService.Resultado.includes('control')
+    const curls = this.resultService.Resultado.includes('curls')
+    const moisturization = this.resultService.Resultado.includes('moisturization')
+    const shine = this.resultService.Resultado.includes('shine')
+    const smootness = this.resultService.Resultado.includes('Smoothness')
+
+
+
+    switch (true) {
+      // Curly + Oil
+      case curly && Oil:
+        if (growth || Thermal) {
+          this.image = '/assets/images/Curly-oily-d-03.png';
+          this.Mid.visivel = true;
+          this.Cream.visivel = true;
+          this.After.visivel = true;
+          this.Jelly.visivel = true;
+          this.Tonic.visivel = true;
+          this.Mask.visivel = true;
+          this.Treatment.visivel = true;
+          this.Leave.visivel = false;
+          this.Milk.visivel = false;
+        } else if (Breakage || resistance || due || Nutrition) {
+          this.image = '/assets/images/Curly-oily-d-02.png';
+          this.Mid.visivel = true;
+          this.Cream.visivel = true;
+          this.After.visivel = true;
+          this.Jelly.visivel = true;
+          this.Tonic.visivel = false;
+          this.Mask.visivel = true;
+          this.Treatment.visivel = true;
+          this.Leave.visivel = false;
+          this.Milk.visivel = false;
+        } else if (smootness || combing || control || curls || moisturization || shine) {
+          this.image = '/assets/images/Curly-oily-d-01.png'
+          this.Mid.visivel = true;
+          this.Cream.visivel = true;
+          this.After.visivel = true;
+          this.Jelly.visivel = true;
+          this.Tonic.visivel = false;
+          this.Mask.visivel = true;
+          this.Treatment.visivel = false;
+          this.Leave.visivel = false;
+          this.Milk.visivel = false;
+        }
+        break;
+
+      // Curly + Balanced
+      case curly && Balanced:
+        if (growth || Thermal) {
+          this.image = '/assets/images/Curly-balanced-d-03.png';
+          this.Mid.visivel = true;
+          this.Cream.visivel = true;
+          this.After.visivel = true;
+          this.Jelly.visivel = true;
+          this.Tonic.visivel = true;
+          this.Mask.visivel = true;
+          this.Treatment.visivel = true;
+          this.Leave.visivel = false;
+          this.Milk.visivel = false;
+        } else if (Breakage || resistance || due || Nutrition) {
+          this.image = '/assets/images/Curly-balanced-d-02.png';
+          this.Mid.visivel = true;
+          this.Cream.visivel = true;
+          this.After.visivel = true;
+          this.Jelly.visivel = true;
+          this.Tonic.visivel = false;
+          this.Mask.visivel = true;
+          this.Treatment.visivel = true;
+          this.Leave.visivel = false;
+          this.Milk.visivel = false;
+        } else if (smootness || combing || control || curls || moisturization || shine) {
+          this.image = '/assets/images/Curly-balanced-d-01.png'
+          this.Mid.visivel = true;
+          this.Cream.visivel = true;
+          this.After.visivel = true;
+          this.Jelly.visivel = true;
+          this.Tonic.visivel = false;
+          this.Mask.visivel = true;
+          this.Treatment.visivel = false;
+          this.Leave.visivel = false;
+          this.Milk.visivel = false;
+        }
+        break;
+
+      // Coily + Oil
+      case coily && Oil:
+        if (growth || Thermal) {
+          this.image = '/assets/images/Coily/Coily-oily-03.png';
+          this.Mid.visivel = true;
+          this.Cream.visivel = false;
+          this.After.visivel = true;
+          this.Jelly.visivel = true;
+          this.Tonic.visivel = true;
+          this.Mask.visivel = true;
+          this.Treatment.visivel = true;
+          this.Leave.visivel = false;
+          this.Milk.visivel = false;
+        } else if (Breakage || resistance || due || Nutrition) {
+          this.image = '/assets/images/Coily/Coily-oily-d-02.png';
+          this.Mid.visivel = true;
+          this.Cream.visivel = false;
+          this.After.visivel = true;
+          this.Jelly.visivel = true;
+          this.Tonic.visivel = false;
+          this.Mask.visivel = true;
+          this.Treatment.visivel = true;
+          this.Leave.visivel = false;
+          this.Milk.visivel = false;
+        } else if (smootness || combing || control || curls || moisturization || shine) {
+          this.image = '/assets/images/Coily/Coily-oily-d-01.png'
+          this.Mid.visivel = true;
+          this.Cream.visivel = true;
+          this.After.visivel = true;
+          this.Jelly.visivel = true;
+          this.Tonic.visivel = false;
+          this.Mask.visivel = true;
+          this.Treatment.visivel = true;
+          this.Leave.visivel = false;
+          this.Milk.visivel = false;
+        }
+        break;
+
+      // Coily + Balanced
+      case coily && Balanced:
+        if (growth || Thermal) {
+          this.image = '/assets/images/Coily/Coily-balanced-d-03.png';
+          this.Mid.visivel = true;
+          this.Cream.visivel = false;
+          this.After.visivel = true;
+          this.Jelly.visivel = true;
+          this.Tonic.visivel = true;
+          this.Mask.visivel = true;
+          this.Treatment.visivel = false;
+          this.Leave.visivel = true;
+          this.Milk.visivel = true;
+        } else if (Breakage || resistance || due || Nutrition) {
+          this.image = '/assets/images/Coily/Coily-balanced-d-02.png';
+          this.Mid.visivel = true;
+          this.Cream.visivel = false;
+          this.After.visivel = true;
+          this.Jelly.visivel = true;
+          this.Tonic.visivel = false;
+          this.Mask.visivel = true;
+          this.Treatment.visivel = false;
+          this.Leave.visivel = true;
+          this.Milk.visivel = true;
+        } else if (smootness || combing || control || curls || moisturization || shine) {
+          this.image = '/assets/images/Coily/Coily-balanced-d-01.png'
+
+          this.Mid.visivel = true;
+          this.Cream.visivel = true;
+          this.After.visivel = true;
+          this.Jelly.visivel = true;
+          this.Tonic.visivel = false;
+          this.Mask.visivel = true;
+          this.Treatment.visivel = false;
+          this.Leave.visivel = true;
+          this.Milk.visivel = true;
+        }
+        break;
+      case Kinky && Oil:
+        if (growth || Thermal) {
+          this.image = '/assets/images/Kinky/Kink-oily-d-03.png'
+          this.Mid.visivel = true;
+          this.Cream.visivel = true;
+          this.After.visivel = true;
+          this.Jelly.visivel = true;
+          this.Tonic.visivel = false;
+          this.Mask.visivel = true;
+          this.Treatment.visivel = false;
+          this.Leave.visivel = false;
+          this.Milk.visivel = false;
+        } else if (Breakage || resistance || due || Nutrition) {
+          this.image = '/assets/images/Kinky/Kink-oily-d-02.png'
+          this.Mid.visivel = true;
+          this.Cream.visivel = false;
+          this.After.visivel = true;
+          this.Jelly.visivel = true;
+          this.Tonic.visivel = true;
+          this.Mask.visivel = true;
+          this.Treatment.visivel = true;
+          this.Leave.visivel = false;
+          this.Milk.visivel = false;
+        } else if (smootness || combing || control || curls || moisturization || shine) {
+          this.image = '/assets/images/Kinky/Kink-oily-d-01.png'
+          this.Mid.visivel = true;
+          this.Cream.visivel = true;
+          this.After.visivel = true;
+          this.Jelly.visivel = true;
+          this.Tonic.visivel = false;
+          this.Mask.visivel = true;
+          this.Treatment.visivel = true;
+          this.Leave.visivel = false;
+          this.Milk.visivel = false;
+        }
+        break;
+
+      case Kinky && Balanced:
+        if (growth || Thermal) {
+          this.image = '/assets/images/Kinky/Kink-balanced-d-03.png'
+          this.Mid.visivel = true;
+          this.Cream.visivel = false;
+          this.After.visivel = true;
+          this.Jelly.visivel = true;
+          this.Tonic.visivel = true;
+          this.Mask.visivel = true;
+          this.Treatment.visivel = false;
+          this.Leave.visivel = true;
+          this.Milk.visivel = true;
+
+        } else if (Breakage || resistance || due || Nutrition) {
+          this.image = '/assets/images/Kinky/Kink-balanced-d-02.png'
+          this.Mid.visivel = true;
+          this.Cream.visivel = false;
+          this.After.visivel = true;
+          this.Jelly.visivel = true;
+          this.Tonic.visivel = false;
+          this.Mask.visivel = true;
+          this.Treatment.visivel = false;
+          this.Leave.visivel = true;
+          this.Milk.visivel = true;
+        } else if (smootness || combing || control || curls || moisturization || shine) {
+          this.image = '/assets/images/Kinky/Kink-balanced-d-01.png'
+          this.Mid.visivel = true;
+          this.Cream.visivel = true;
+          this.After.visivel = true;
+          this.Jelly.visivel = true;
+          this.Tonic.visivel = false;
+          this.Mask.visivel = true;
+          this.Treatment.visivel = true;
+          this.Leave.visivel = true;
+          this.Milk.visivel = false;
+        }
+        // ... Continue with other cases similarly
+        break;
+      default :
+      console.log("error!")
+
     }
-    
-    }
-
-    const resultOne = ['Curly', 'Oil', 'combing', 'control', 'curls', 'moisturization', 'Smoothness']
-    const todosOsValores = resultOne.every(valor => this.resultService.Resultado.includes(valor))
-    if (todosOsValores) {
-      this.image = '/assets/images/Curly-oily-d-01.png'
-      this.Mid.visivel = true;
-      this.Cream.visivel = true;
-      this.After.visivel = true;
-      this.Jelly.visivel = true;
-      this.Tonic.visivel = false;
-      this.Mask.visivel = true;
-      this.Treatment.visivel = false;
-      this.Leave.visivel = false;
-      this.Milk.visivel = false;
-    }
-
-
-    //Curly-Balanced
-
-    if (curly && Balanced) {
-      if (growth || Thermal) {
-        this.image = '/assets/images/Curly-balanced-d-03.png'
-        this.Mid.visivel = true;
-        this.Cream.visivel = true;
-        this.After.visivel = true;
-        this.Jelly.visivel = true;
-        this.Tonic.visivel = true;
-        this.Mask.visivel = true;
-        this.Treatment.visivel = true;
-        this.Leave.visivel = false;
-        this.Milk.visivel = false;
-      }
-    }
-    if (curly && Balanced  ) {
-
-      if (Breakage || resistance || due || Nutrition) {
-        this.image = '/assets/images/Curly-balanced-d-02.png'
-        this.Mid.visivel = true;
-        this.Cream.visivel = true;
-        this.After.visivel = true;
-        this.Jelly.visivel = true;
-        this.Tonic.visivel = false;
-        this.Mask.visivel = true;
-        this.Treatment.visivel = true;
-        this.Leave.visivel = false;
-        this.Milk.visivel = false;
-      }
-    }
-    const resultFour = ['Curly', 'Balanced', 'combing', 'control', 'curls', 'moisturization', 'Smoothness']
-    const todosOsValoresFour = resultFour.every(valor => this.resultService.Resultado.includes(valor))
-    if (todosOsValoresFour) {
-      this.image = '/assets/images/Curly-balanced-d-01.png'
-      this.Mid.visivel = true;
-      this.Cream.visivel = true;
-      this.After.visivel = true;
-      this.Jelly.visivel = true;
-      this.Tonic.visivel = false;
-      this.Mask.visivel = true;
-      this.Treatment.visivel = false;
-      this.Leave.visivel = false;
-      this.Milk.visivel = false;
-    }
-    //Coily-Oil
-
-    if (coily && Oil) {
-      if (growth || Thermal) {
-        this.image = '/assets/images/Coily/Coily-oily-d-03.png'
-        this.Mid.visivel = true;
-        this.Cream.visivel = false;
-        this.After.visivel = true;
-        this.Jelly.visivel = true;
-        this.Tonic.visivel = true;
-        this.Mask.visivel = true;
-        this.Treatment.visivel = true;
-        this.Leave.visivel = false;
-        this.Milk.visivel = false;
-      }
-    }
-
-    if (coily && Oil) {
-      if (Breakage || resistance || due || Nutrition) {
-        this.image ='/assets/images/Coily/Coily-oily-d-02.png'
-        this.Mid.visivel = true;
-        this.Cream.visivel = false;
-        this.After.visivel = true;
-        this.Jelly.visivel = true;
-        this.Tonic.visivel = false;
-        this.Mask.visivel = true;
-        this.Treatment.visivel = true;
-        this.Leave.visivel = false;
-        this.Milk.visivel = false;
-      }
-    }
-
-    const resultSeven = ['Coily', 'Oil', 'combing', 'control', 'curls', 'moisturization', 'Smoothness']
-    const todosOsValoresSeven = resultSeven.every(valor => this.resultService.Resultado.includes(valor))
-    if (todosOsValoresSeven) {
-      this.image = '/assets/images/Coily/Coily-oily-d-01.png'
-      this.Mid.visivel = true;
-      this.Cream.visivel = true;
-      this.After.visivel = true;
-      this.Jelly.visivel = true;
-      this.Tonic.visivel = false;
-      this.Mask.visivel = true;
-      this.Treatment.visivel = true;
-      this.Leave.visivel = false;
-      this.Milk.visivel = false;
-    }
-
-
-
-    //Coily-Balanced
-
-    if (coily && Balanced) {
-      if (growth || Thermal) {
-        this.image = '/assets/images/Coily/Coily-balanced-d-03.png'
-        this.Mid.visivel = true;
-        this.Cream.visivel = false;
-        this.After.visivel = true;
-        this.Jelly.visivel = true;
-        this.Tonic.visivel = true;
-        this.Mask.visivel = true;
-        this.Treatment.visivel = false;
-        this.Leave.visivel = true;
-        this.Milk.visivel = true;
-      }
-    }
-
-    if (coily && Balanced) {
-      if (Breakage || resistance || due || Nutrition) {
-        this.image = '/assets/images/Coily/Coily-balanced-d-02.png'
-        this.Mid.visivel = true;
-        this.Cream.visivel = false;
-        this.After.visivel = true;
-        this.Jelly.visivel = true;
-        this.Tonic.visivel = false;
-        this.Mask.visivel = true;
-        this.Treatment.visivel = false;
-        this.Leave.visivel = true;
-        this.Milk.visivel = true;
-      }
-    }
-
-
-    const resultTeen = ['Coily', 'Balanced', 'combing', 'control', 'curls', 'moisturization', 'shine']
-    const todosOsValoresTeen = resultTeen.every(valor => this.resultService.Resultado.includes(valor))
-    if (todosOsValoresTeen) {
-      this.image = '/assets/images/Coily/Coily-balanced-d-01.png'
-
-      this.Mid.visivel = true;
-      this.Cream.visivel = true;
-      this.After.visivel = true;
-      this.Jelly.visivel = true;
-      this.Tonic.visivel = false;
-      this.Mask.visivel = true;
-      this.Treatment.visivel = false;
-      this.Leave.visivel = true;
-      this.Milk.visivel = true;
-    }
-
-
-    //Kinky-oil
-
-    if (Kinky && Oil) {
-      if (growth || Thermal) {
-        this.image = '/assets/images/Kinky/Kink-oily-d-03.png'
-        this.Mid.visivel = true;
-        this.Cream.visivel = true;
-        this.After.visivel = true;
-        this.Jelly.visivel = true;
-        this.Tonic.visivel = false;
-        this.Mask.visivel = true;
-        this.Treatment.visivel = false;
-        this.Leave.visivel = false;
-        this.Milk.visivel = false;
-      }
-    }
-
-    if (Kinky && Oil) {
-      if (Breakage || resistance || due || Nutrition) {
-        this.image = '/assets/images/Kinky/Kink-oily-d-02.png'
-        this.Mid.visivel = true;
-        this.Cream.visivel = false;
-        this.After.visivel = true;
-        this.Jelly.visivel = true;
-        this.Tonic.visivel = true;
-        this.Mask.visivel = true;
-        this.Treatment.visivel = true;
-        this.Leave.visivel = false;
-        this.Milk.visivel = false;
-      }
-    }
-
-    const resultTreze = ['Kinky', 'Oil', 'combing', 'control', 'curls', 'moisturization', 'shine']
-    const todosOsValoresTreze = resultTreze.every(valor => this.resultService.Resultado.includes(valor))
-    if (todosOsValoresTreze) {
-      this.image = '/assets/images/Kinky/Kink-oily-d-01.png'
-      this.Mid.visivel = true;
-      this.Cream.visivel = true;
-      this.After.visivel = true;
-      this.Jelly.visivel = true;
-      this.Tonic.visivel = false;
-      this.Mask.visivel = true;
-      this.Treatment.visivel = true;
-      this.Leave.visivel = false;
-      this.Milk.visivel = false;
-    }
-
-
-    //Kinky-Balanced
-
-    if (Kinky && Balanced) {
-      if (growth || Thermal) {
-        this.image = '/assets/images/Kinky/Kink-balanced-d-03.png'
-        this.Mid.visivel = true;
-        this.Cream.visivel = false;
-        this.After.visivel = true;
-        this.Jelly.visivel = true;
-        this.Tonic.visivel = true;
-        this.Mask.visivel = true;
-        this.Treatment.visivel = false;
-        this.Leave.visivel = true;
-        this.Milk.visivel = true;
-      }
-    }
-
-    if (Kinky && Balanced) {
-      if (Breakage || resistance || due || Nutrition) {
-        this.image = '/assets/images/Kinky/Kink-balanced-d-02.png'
-        this.Mid.visivel = true;
-        this.Cream.visivel = false;
-        this.After.visivel = true;
-        this.Jelly.visivel = true;
-        this.Tonic.visivel = false;
-        this.Mask.visivel = true;
-        this.Treatment.visivel = false;
-        this.Leave.visivel = true;
-        this.Milk.visivel = true;
-      }
-    }
-
-    const resultDezesseis = ['Kinky', 'Balanced', 'combing', 'control', 'curls', 'moisturization', 'shine']
-    const todosOsValoresDezesseis = resultDezesseis.every(valor => this.resultService.Resultado.includes(valor))
-    if (todosOsValoresDezesseis) {
-      this.image = '/assets/images/Kinky/Kink-balanced-d-01.png'
-      this.Mid.visivel = true;
-      this.Cream.visivel = true;
-      this.After.visivel = true;
-      this.Jelly.visivel = true;
-      this.Tonic.visivel = false;
-      this.Mask.visivel = true;
-      this.Treatment.visivel = true;
-      this.Leave.visivel = true;
-      this.Milk.visivel = false;
-    }
-
   }
 
 
