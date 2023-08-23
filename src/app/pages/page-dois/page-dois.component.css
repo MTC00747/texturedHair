@@ -96,7 +96,7 @@ li {
     .container {
         background: url('/assets/images/fundo-resultado-mobile.jpg');
         background-size: cover;
-        height: 100vh;
+        height: 120vh;
         width: 100vw;
 
     }
@@ -109,6 +109,8 @@ li {
     }
 
     .bloco-dois>img {
+        display: block;
+        margin:auto;
         padding-top: 20px;
         width: 100px;
     }
@@ -168,6 +170,8 @@ li {
     }
 
     .bloco-tres>img {
+        display: block;
+        margin:auto;
         width: 170px;
     }
 

@@ -111,6 +111,7 @@ strong {
         background-size: cover;
         height: 1100px;
         width: 100%;
+        display: flex;
     }
 
     .result {
@@ -193,7 +194,7 @@ strong {
         color: rgb(8, 8, 8);
         width: 85%;
         font-family: 'Barlow', sans-serif;
-        ;
+        
     }
 
     span {

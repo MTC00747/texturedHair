@@ -1,5 +1,5 @@
 .container {
-    background: url('/assets/images/fundo-resultado-mobile.jpg');
+    background: url('/assets/images/desktop.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -73,10 +73,18 @@
 }
 
 @media (max-width: 768px) {
-    .container{
+
+    .container {
+        background: url('/assets/images/fundo-resultado-mobile.jpg');
         height: 100vh;
         width: 100vw;
     }
+
+    .block-one>img {
+        display: block;
+        margin: auto;
+    }
+
     .block-one {
 
         display: flex;
@@ -143,10 +151,13 @@
 
 
 @media (max-width: 480px) {
-    .container{
+
+    .container {
         height: 100vh;
         width: 100vw;
+        background: url('/assets/images/fundo-resultado-mobile.jpg');
     }
+
     .block-one {
 
         display: flex;
