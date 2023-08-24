@@ -29,6 +29,8 @@
 }
 .titulo > h3{
     font-family: 'Barlow', sans-serif;
+    text-align: center;
+    width: 40%;
 }
 .titulo >img {
     width: 140px;
@@ -93,12 +95,11 @@ input {
     }
 
     .bloco-um>img {
-        margin-top: 30px;
     }
 
     .form {
         padding: 20px;
-        margin-top: 50px;
+        margin-top: 10px;
         height: 600px;
         width: 50vh;
         border: 1px solid black;
@@ -126,7 +127,7 @@ input {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 40px;
+        margin-top: 10px;
     }
 
     .bloco-dois>img {
@@ -140,7 +141,7 @@ input {
     }
 
     .text>h3 {
-        margin-top: 20px;
+        margin-top: 10px;
         font-family: 'Barlow', sans-serif;
         font-size: 1.9em;
         width: 70%;
@@ -148,7 +149,7 @@ input {
     }
 
     .paragrafo {
-        margin-top: 20px;
+        margin-top: 10px;
         width: 80%;
         font-size: 1em;
         font-family: 'Barlow', sans-serif;
@@ -164,7 +165,7 @@ input {
 
     /*Bloco 3*/
     .bloco-tres{
-        margin-top: 40px;
+        margin-top: 10px;
         width: 80%;
         display: flex;
         justify-content: space-between;
@@ -174,7 +175,7 @@ input {
     }
     .bloco-tres>button {
         width: 150px;
-        margin-top: 30px;
+        margin-top: 10px;
         height: 40px;
         font-family: 'Barlow', sans-serif;
         background-color: black;
@@ -208,7 +209,7 @@ input {
 
     .form {
         padding: 20px;
-        margin-top: 20px;
+        margin-top: 10px;
         height: 500px;
         width: 32vh;
         border: 1px solid rgb(253, 253, 253);
@@ -238,7 +239,7 @@ input {
         justify-content: center;
         display: flex;
         align-items: center;
-        padding-top: 20px;
+        padding-top: 10px;
         margin-bottom: 10px;
     }
     .titulo > h3{

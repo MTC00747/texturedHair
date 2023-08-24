@@ -15,7 +15,8 @@
 }
 
 .block-one>img {
-    margin-left: 85%;
+    margin: auto;
+    display: block;
     margin-top: 40px;
     width: 180px;
 }
@@ -78,6 +79,10 @@
         background: url('/assets/images/fundo-resultado-mobile.jpg');
         height: 100vh;
         width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     .block-one>img {
@@ -86,7 +91,7 @@
     }
 
     .block-one {
-
+      
         display: flex;
         justify-content: center;
         align-items: center;
