@@ -9,6 +9,7 @@ import { BenefitsComponent } from './pages/benefits/benefits.component';
 import { Result1Component } from './pages/results/result1/result1.component';
 import { ResultDoisComponent } from './pages/results/result-dois/result-dois.component';
 import { PageDoisComponent } from './pages/page-dois/page-dois.component';
+import { ThankComponent } from './pages/thank/thank.component';
 
 const routes: Routes = [
   {path:'', component: PaginaInicialComponent},
@@ -18,7 +19,8 @@ const routes: Routes = [
   {path: 'benefits', component: BenefitsComponent},
   {path:'result', component: Result1Component},
   {path:'result-dois', component: ResultDoisComponent},
-  {path:'page-dois', component: PageDoisComponent}
+  {path:'page-dois', component: PageDoisComponent},
+  {path:'thank', component: ThankComponent}
 ];
 
 @NgModule({

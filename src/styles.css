@@ -1,7 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
-*{
+* {
     box-sizing: 0;
     margin: 0;
     padding: 0;
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Athiti:wght@200&family=Barlow:wght@100&family=Roboto:ital,wght@0,400;1,700&display=swap');

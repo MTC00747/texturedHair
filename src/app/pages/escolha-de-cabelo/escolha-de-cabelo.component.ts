@@ -14,7 +14,7 @@ export class EscolhaDeCabeloComponent {
   buttonsEnabled: boolean = false;
 
   constructor(private route: Router, private resultService: ResultadosService) {
-
+    console.log(resultService.form)
   }
 
 

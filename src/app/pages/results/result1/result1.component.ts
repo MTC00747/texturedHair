@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { ResultadosService } from 'src/app/resultados.service';
-
+import * as emailjs from 'emailjs-com';
+import { ThisReceiver } from '@angular/compiler';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-result1',
   templateUrl: './result1.component.html',
@@ -114,7 +116,7 @@ export class Result1Component {
 
 
 
-  constructor(private resultService: ResultadosService) {
+  constructor(private route : Router ,private resultService: ResultadosService) {
 
 
     const curly = this.resultService.Resultado.includes('Curly')
@@ -644,7 +646,26 @@ export class Result1Component {
 
   }
 
-
-
+  submitForm(){
+		const 	emailParams: any = {
+			firstName: this.resultService.form.firstName,
+      lastName : this.resultService.form.LastName,
+			email:this.resultService.form.email,
+      academic : this.resultService.form.academicTitle,
+			company:this.resultService.form.company,
+      phone : this.resultService.form.phone,
+      result : this.resultService.Resultado
+		}
+		emailjs.send('service_q7kxuvq', 'template_oimyi3q', emailParams, 'j0dWighWN1fKIwCub')
+		
+		.then(response => {
+		  console.log('E-mail enviado com sucesso!', response);
+		  console.log(emailParams)
+		})
+		.catch(error => {
+		  console.error('Erro ao enviar o e-mail:', error);
+		});
+    this.route.navigate(['thank'])
 }
 
+}

@@ -13,11 +13,11 @@
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    margin-bottom: 30%;
+    height: 99vh;
 }
 
 .result>img {
-    width: 790px;
+    width: 650px;
 }
 
 .Acoordeon {
@@ -43,7 +43,7 @@ button {
 
 .mid {
     padding: 5px;
-    width: 75vh;
+    width: 38vw;
 }
 
 .after {
@@ -194,7 +194,7 @@ strong {
         color: rgb(8, 8, 8);
         width: 85%;
         font-family: 'Barlow', sans-serif;
-        
+
     }
 
     span {

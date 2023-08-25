@@ -11,14 +11,17 @@
 }
 
 .block-one {
-    margin-top: 50px;
+
+    height: 20vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
-span{
+
+span {
     font-family: 'Barlow', sans-serif;
 }
+
 .Logo-one {
     width: 200px;
 }
@@ -34,24 +37,25 @@ span{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 80%;
+    width: 45%;
+    margin-top: 2%;
     height: 400px;
-    margin-left: 0px;
 
+    margin-left: 1%;
     flex-wrap: wrap;
 }
 
 .icones {
 
-    width: 10%;
-    padding: 40px;
+    width: 24%;
+    padding: 0px;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 0px;
 }
 
 .icones>img {
-    width: 100px;
+    width: 120px;
     filter: grayscale(100%);
 }
 
@@ -69,19 +73,20 @@ span{
 }
 
 .next {
-    margin-top: 30px;
+    margin-top: 70px;
     padding: 10px;
     border-radius: 10px;
-    margin-bottom: 50px;
-    background-color: black;
-    color: rgb(253, 253, 253);
     width: 200px;
     text-align: center;
     font-family: 'Barlow', sans-serif;
+    margin-right: 4%;
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1920px) {
     .container {
+        background: url('/assets/images/desktop.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -91,10 +96,102 @@ span{
     }
 
     .block-one {
-        margin-top: 50px;
+
+        height: 20vh;
         display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    span {
+        font-family: 'Barlow', sans-serif;
+    }
+
+    .Logo-one {
+        width: 200px;
+    }
+
+    .Logo-two {
+        margin-left: 50px;
+        width: 200px;
+    }
+
+    .block-two {
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 45%;
+        margin-top: 2%;
+        height: 400px;
+
+        margin-left: 1%;
+        flex-wrap: wrap;
+    }
+
+    .icones {
+
+        width: 24%;
+        padding: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0px;
+    }
+
+    .icones>img {
+        width: 120px;
+        filter: grayscale(100%);
+    }
+
+    .block-two img.active {
+        filter: none;
+    }
+
+    .titulo {
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .titulo>h2 {
+        font-family: 'Barlow', sans-serif;
+    }
+
+    .next {
+        width: 150px;
+        margin-top: 20px;
+        height: 40px;
+        font-family: 'Barlow', sans-serif;
+        background-color: black;
+        color: white;
+        font-size: 1.3em;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 1366px) {
+    .container {
+        background: url('/assets/images/desktop.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .block-one {
+        margin-top: 30px;
+        height: 20vh;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    span {
+        font-family: 'Barlow', sans-serif;
     }
 
     .Logo-one {
@@ -155,86 +252,6 @@ span{
         text-align: center;
         font-family: 'Barlow', sans-serif;
         margin-right: 4%;
-    }
-}
-
-@media (max-width: 1366px) {
-    .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        width: 100vw;
-    }
-
-    .block-one {
-        margin-top: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .Logo-one {
-        width: 200px;
-    }
-
-    .Logo-two {
-        margin-left: 50px;
-        width: 200px;
-    }
-
-    .block-two {
-
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        width: 80%;
-        height: 400px;
-        margin-left: 0px;
-
-        flex-wrap: wrap;
-    }
-
-    .icones {
-
-        width: 10%;
-        padding: 40px;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-    }
-
-    .icones>img {
-        width: 120px;
-        filter: grayscale(100%);
-    }
-
-    .block-two img.active {
-        filter: none;
-    }
-
-    .titulo {
-        margin-top: 50px;
-        text-align: center;
-    }
-
-    .titulo>h2 {
-        font-family: 'Barlow', sans-serif;
-    }
-
-    .next {
-        margin-top: 260px;
-        padding: 10px;
-        border-radius: 10px;
-        width: 200px;
-        text-align: center;
-        font-family: 'Barlow', sans-serif;
-    }
-
-    span {
-        font-family: 'Barlow', sans-serif;
     }
 }
 
@@ -310,17 +327,15 @@ span{
     .container {
         height: 120vh;
         width: 100vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
     }
 
     .block-one {
-        margin-top: 30px;
         display: flex;
         justify-content: center;
         align-items: center;
+        margin: 0;
+        padding: 0;
+        height: 10vh;
     }
 
     .Logo-one {
@@ -333,25 +348,20 @@ span{
     }
 
     .block-two {
+        margin: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 50vw;
-        height: 610px;
-        margin-right: 160px;
+        width: 100%;
         flex-wrap: wrap;
+        gap: 25px;
     }
-
     .icones {
-
-        width: 20vw;
-        padding: 10px;
+        width:5vw;
         display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        margin-left: 5px;
-        display: block;
+        align-items: center;
+        justify-content: center;
     }
 
     .icones>img {
@@ -364,7 +374,7 @@ span{
     }
 
     .titulo {
-        margin-top: 50px;
+        margin-top: 0px;
         text-align: center;
     }
 
@@ -373,12 +383,15 @@ span{
     }
 
     .next {
-        padding: 10px;
-        width: 200px;
-        text-align: center;
+        width: 150px;
+        margin-top: 20px;
+        height: 40px;
+        font-family: 'Barlow', sans-serif;
         background-color: black;
         color: white;
-
-        margin: 0px
+        font-size: 1.3em;
+        border-radius: 10px;
+        margin: auto;
+        display: block;
     }
 }

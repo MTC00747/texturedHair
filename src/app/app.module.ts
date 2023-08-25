@@ -14,6 +14,7 @@ import { ResultadosService } from './resultados.service';
 import { ResultDoisComponent } from './pages/results/result-dois/result-dois.component';
 import { ResultTresComponent } from './pages/results/result-tres/result-tres.component';
 import { PageDoisComponent } from './pages/page-dois/page-dois.component';
+import { ThankComponent } from './pages/thank/thank.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { PageDoisComponent } from './pages/page-dois/page-dois.component';
     Result1Component,
     ResultDoisComponent,
     ResultTresComponent,
-    PageDoisComponent
+    PageDoisComponent,
+    ThankComponent
   ],
   imports: [
     BrowserModule,

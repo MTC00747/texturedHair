@@ -1,36 +1,39 @@
 <div class="container">
+    
     <div class="bloco-um">
-        <img src="/assets/Logo/logo-symrise.png">
         <div class="titulo">
+            <div class="image"> <img src="/assets/Logo/logo-symrise.png"></div>
             <img src="/assets/Logo/logo-brown.png" />
             <h3>Analyze your hair in 2 minutes and receive the ideal treatment for you hair type</h3>
         </div>
         <div class="form">
             <form action="" method="post">
                 <label for="email">Email:</label>
-                <input type="text" id="email" name="email" required [(ngModel)]="email" ><br>
+                <input type="text" id="email" name="email" required [(ngModel)]="email"><br>
 
                 <label for="title">Academic title:</label>
-                <input type="email" id="academic-title" name="title" required><br>
+                <input type="email" id="academic-title" name="academicTitle" required [(ngModel)]="academicTitle"><br>
 
                 <label for="nome">First name:</label>
-                <input type="text" id="first-name" name="first"><br>
+                <input type="text" id="first-name" name="firstName" required [(ngModel)]="firstName"><br>
 
                 <label for="last">Last name:</label>
-                <input type="text" id="last-name" name="last"><br>
+                <input type="text" id="last-name" name="lastName" [(ngModel)]="lastName"><br>
 
                 <label for="Company">Company:</label>
-                <input type="text" id="Company" name="idade"><br>
+                <input type="text" id="Company" name="company" [(ngModel)]="company"><br>
 
 
                 <label for="Phone">Phone:</label>
-                <input type="tel" id="Company" name="Phone"><br>
+                <input type="tel" id="Company" name="phone" [(ngModel)]="phone"><br>
 
             </form>
-            <input type="checkbox" id="aceite" name="aceite" required>
-            <label for="aceite"> I read the
-                <a href="https://www.symrise.com/privacy-policy/" target="_blank">
-                  Privacy Statement</a>. By submitting your email, you agree to our Terms & Privacy.</label><br>
+            <div class="aceita">
+                <input type="checkbox" id="aceite" name="aceite" required>
+                <label for="aceite"> I read the
+                    <a href="https://www.symrise.com/privacy-policy/" target="_blank">
+                        Privacy Statement</a>. By submitting your email, you agree to our Terms & Privacy.</label><br>
+            </div>
         </div>
         <div class="bloco-tres">
             <button (click)="NextPage()">Start</button>

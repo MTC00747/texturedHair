@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ResultadosService } from 'src/app/resultados.service';
-
+import * as emailjs from 'emailjs-com';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-result-dois',
   templateUrl: './result-dois.component.html',
@@ -11,18 +12,18 @@ export class ResultDoisComponent {
 
   Mid: any = {
     visivel: true,
-    width: '75vh',
+    width: '38vw',
     height: '25px',
-    backgroundColor: 'rgba(213, 199, 190, 0.3)',
+    backgroun29vhr: 'rgba(213, 199, 190, 0.3)',
     borderRadius: '10px 10px 10px 10px',
     transition: 'width 0.5s, height 0.5s',
     border: '0.7px solid white'
   };
   After: any = {
     visivel: true,
-    width: '75vh',
+    width: '38vw',
     height: '25px',
-    backgroundColor: 'rgba(213, 199, 190, 0.3)',
+    backgroun29vhr: 'rgba(213, 199, 190, 0.3)',
     borderRadius: '10px 10px 10px 10px',
     transition: 'width 0.5s, height 0.5s',
 
@@ -30,9 +31,9 @@ export class ResultDoisComponent {
   };
   Treatment: any = {
     visivel: true,
-    width: '75vh',
+    width: '38vw',
     height: '25px',
-    backgroundColor: 'rgba(213, 199, 190, 0.3)',
+    backgroun29vhr: 'rgba(213, 199, 190, 0.3)',
     borderRadius: '10px 10px 10px 10px',
     transition: 'width 0.5s, height 0.5s',
 
@@ -40,9 +41,9 @@ export class ResultDoisComponent {
   };
   Leave: any = {
     visivel: true,
-    width: '75vh',
+    width: '38vw',
     height: '25px',
-    backgroundColor: 'rgba(213, 199, 190, 0.3)',
+    backgroun29vhr: 'rgba(213, 199, 190, 0.3)',
     borderRadius: '10px 10px 10px 10px',
     transition: 'width 0.5s, height 0.5s',
 
@@ -50,9 +51,9 @@ export class ResultDoisComponent {
   };
   Mask: any = {
     visivel: true,
-    width: '75vh',
+    width: '38vw',
     height: '25px',
-    backgroundColor: 'rgba(213, 199, 190, 0.3)',
+    backgroun29vhr: 'rgba(213, 199, 190, 0.3)',
     borderRadius: '10px 10px 10px 10px',
     transition: 'width 0.5s, height 0.5s',
 
@@ -61,9 +62,9 @@ export class ResultDoisComponent {
   };
   Cream: any = {
     visivel: true,
-    width: '75vh',
+    width: '38vw',
     height: '25px',
-    backgroundColor: 'rgba(213, 199, 190, 0.3)',
+    backgroun29vhr: 'rgba(213, 199, 190, 0.3)',
     borderRadius: '10px 10px 10px 10px',
     transition: 'width 0.5s, height 0.5s',
 
@@ -71,9 +72,9 @@ export class ResultDoisComponent {
   };
   Jelly: any = {
     visivel: true,
-    width: '75vh',
+    width: '38vw',
     height: '25px',
-    backgroundColor: 'rgba(213, 199, 190, 0.3)',
+    backgroun29vhr: 'rgba(213, 199, 190, 0.3)',
     borderRadius: '10px 10px 10px 10px',
     transition: 'width 0.5s, height 0.5s',
 
@@ -82,9 +83,9 @@ export class ResultDoisComponent {
 
   Milk: any = {
     visivel: true,
-    width: '75vh',
+    width: '38vw',
     height: '25px',
-    backgroundColor: 'rgba(213, 199, 190, 0.3)',
+    backgroun29vhr: 'rgba(213, 199, 190, 0.3)',
     borderRadius: '10px 10px 10px 10px',
     transition: 'width 0.5s, height 0.5s',
 
@@ -92,9 +93,9 @@ export class ResultDoisComponent {
   };
   Tonic: any = {
     visivel: true,
-    width: '75vh',
+    width: '38vw',
     height: '25px',
-    backgroundColor: 'rgba(213, 199, 190, 0.3)',
+    backgroun29vhr: 'rgba(213, 199, 190, 0.3)',
     borderRadius: '10px 10px 10px 10px',
     transition: 'width 0.5s, height 0.5s',
 
@@ -114,7 +115,7 @@ export class ResultDoisComponent {
 
 
 
-  constructor(private resultService: ResultadosService) {
+  constructor(private route : Router , private resultService: ResultadosService) {
 
 
     const curly = this.resultService.Resultado.includes('Curly')
@@ -378,9 +379,9 @@ export class ResultDoisComponent {
 
 
   expandDivUm() {
-    this.Mid.width = '75vh';
+    this.Mid.width = '38vw';
     this.TextoUm = true;
-    this.Mid.height = '360px';
+    this.Mid.height = '47vh';
 
 
     this.TextoDois = false;
@@ -403,9 +404,9 @@ export class ResultDoisComponent {
     this.Tonic.height = '25px';
   }
   expandDivDois() {
-    this.After.width = '75vh';
+    this.After.width = '38vw';
     this.TextoDois = true;
-    this.After.height = '240px';
+    this.After.height = '29vh';
 
 
     this.TextoUm = false;
@@ -427,9 +428,9 @@ export class ResultDoisComponent {
     this.Tonic.height = '25px';
   }
   expandDivTres() {
-    this.Treatment.width = '75vh';
+    this.Treatment.width = '38vw';
     this.TextoTres = true;
-    this.Treatment.height = '340px';
+    this.Treatment.height = '35vh';
 
     this.TextoUm = false;
     this.TextoDois = false;
@@ -451,9 +452,9 @@ export class ResultDoisComponent {
     this.Tonic.height = '25px';
   }
   expandDivQuatro() {
-    this.Leave.width = '75vh';
+    this.Leave.width = '38vw';
     this.TextoQuatro = true;
-    this.Leave.height = '360px';
+    this.Leave.height = '46vh';
 
     this.TextoUm = false;
     this.TextoDois = false;
@@ -476,9 +477,9 @@ export class ResultDoisComponent {
   }
 
   expandDivQuinto() {
-    this.Mask.width = '75vh';
+    this.Mask.width = '38vw';
     this.TextoQuinto = true;
-    this.Mask.height = '350px';
+    this.Mask.height = '40vh';
 
     this.TextoUm = false;
     this.TextoDois = false;
@@ -500,9 +501,9 @@ export class ResultDoisComponent {
     this.Tonic.height = '25px';
   }
   expandDivSexto() {
-    this.Cream.width = '75vh';
+    this.Cream.width = '38vw';
     this.TextoSexto = true;
-    this.Cream.height = '340px';
+    this.Cream.height = '40vh';
 
     this.TextoUm = false;
     this.TextoDois = false;
@@ -524,9 +525,9 @@ export class ResultDoisComponent {
   }
 
   expandDivSetimo() {
-    this.Jelly.width = '75vh';
+    this.Jelly.width = '38vw';
     this.TextoSetimo = true;
-    this.Jelly.height = '240px';
+    this.Jelly.height = '23vh';
 
     this.TextoUm = false;
     this.TextoDois = false;
@@ -548,9 +549,9 @@ export class ResultDoisComponent {
   }
 
   expandDivOito() {
-    this.Milk.width = '75vh';
+    this.Milk.width = '38vw';
     this.TextoOito = true;
-    this.Milk.height = '360px';
+    this.Milk.height = '43vh';
 
     this.TextoUm = false;
     this.TextoDois = false;
@@ -574,9 +575,9 @@ export class ResultDoisComponent {
   }
 
   expandDivNono() {
-    this.Tonic.width = '75vh';
+    this.Tonic.width = '38vw';
     this.TextoNono = true;
-    this.Tonic.height = '280px';
+    this.Tonic.height = '29vh';
 
     this.TextoUm = false;
     this.TextoDois = false;
@@ -598,5 +599,25 @@ export class ResultDoisComponent {
     this.Milk.height = '25px'
 
   }
-
+	submitForm(){
+		const 	emailParams: any = {
+			firstName: this.resultService.form.firstName,
+      lastName : this.resultService.form.LastName,
+			email:this.resultService.form.email,
+      academic : this.resultService.form.academicTitle,
+			company:this.resultService.form.company,
+      phone : this.resultService.form.phone,
+      result : this.resultService.Resultado
+		}
+		emailjs.send('service_q7kxuvq', 'template_oimyi3q', emailParams, 'j0dWighWN1fKIwCub')
+		
+		.then(response => {
+		  console.log('E-mail enviado com sucesso!', response);
+		  console.log(emailParams)
+		})
+		.catch(error => {
+		  console.error('Erro ao enviar o e-mail:', error);
+		});
+    this.route.navigate(['thank'])
+	}
 }

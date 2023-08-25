@@ -91,7 +91,7 @@
     }
 
     .block-one {
-      
+
         display: flex;
         justify-content: center;
         align-items: center;
@@ -161,17 +161,11 @@
         height: 100vh;
         width: 100vw;
         background: url('/assets/images/fundo-resultado-mobile.jpg');
+       
     }
-
-    .block-one {
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
     .block-one>img {
         width: 100px;
+
     }
 
     .block-two {
@@ -179,21 +173,27 @@
     }
 
     .block-two {
-        height: 700px;
-
+        height: 80vh;
+       
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
+    }
+
+    .titulo {
+        margin: auto;
+        display: block;
+        width: 80%;
     }
 
     .titulo>h2 {
         font-family: 'Barlow', sans-serif;
-        font-size: 1.5em;
-        margin-bottom: 10px;
+        width: 100%;
+        text-align: center;
     }
 
     .icones {
-
         display: flex;
         flex-direction: column;
     }
@@ -207,13 +207,6 @@
     .block-two img.active {
         filter: none;
     }
-
-    .block-two>Button {
-        margin-top: 0px;
-        padding: 10px;
-        width: 200px;
-    }
-
 }
 
 /*#a6a8ab*/

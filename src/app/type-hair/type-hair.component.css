@@ -7,16 +7,16 @@
 }
 
 .block-one {
-    
-   display: flex;
-   align-items: center;
-   justify-content: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100px;
 }
 
 .block-one>img {
     width: 180px;
-   
+
 }
 
 .block-two {
@@ -145,9 +145,7 @@
     .container {
         height: 100vh;
         width: 100vw;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    
 
     }
 
@@ -166,17 +164,23 @@
 
 
     .block-two {
-        height: 500px;
-margin: 0;
+        height: 80vh;
+        margin: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
 
     }
 
+    .titulo {
+        margin: auto;
+        display: block;
+        width: 80%;
+    }
+
     .titulo>h2 {
         font-family: 'Barlow', sans-serif;
-
+        width: 100%;
         text-align: center;
     }
 

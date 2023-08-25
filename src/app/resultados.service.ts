@@ -5,6 +5,14 @@ import { Injectable } from '@angular/core';
 })
 export class ResultadosService {
   Resultado: string [] = []
+   form = {
+    firstName : '',
+    LastName : '',
+    academicTitle: '',
+    email : '',
+    company: '',
+    phone : '',
+   }
   constructor() { }
 
 }
