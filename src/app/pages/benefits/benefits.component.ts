@@ -8,6 +8,10 @@ import { ViewportScroller } from '@angular/common';
   styleUrls: ['./benefits.component.css']
 })
 export class BenefitsComponent implements OnInit {
+  button :any = {
+    background : 'rgba(128, 128, 128, 0.2)',
+    color: 'black'
+  }
   icones = [
     { url: '/assets/images/combing.png', active: false, name : 'combing' },
     { url: '/assets/images/frizz-e-volume-control.png', active: false, name : 'control' },
@@ -49,6 +53,8 @@ export class BenefitsComponent implements OnInit {
 
     if (this.buttonActive.length >= 5) {
       this.buttonsEnabled = true;
+      this.button.background = 'black'
+      this.button.color = 'white'
     } else {
       this.buttonsEnabled = false;
     }

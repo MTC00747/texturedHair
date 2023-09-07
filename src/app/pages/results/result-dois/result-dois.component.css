@@ -17,7 +17,7 @@
 }
 
 .result>img {
-    width: 650px;
+    width: 550px;
 }
 
 .Acoordeon {
@@ -44,11 +44,13 @@ button {
 .mid {
     padding: 5px;
     width: 38vw;
+    
 }
 
 .after {
 
     margin: 5px;
+    overflow: auto;
 }
 
 .mid-shampoo {
@@ -102,7 +104,225 @@ span {
 strong {
     font-size: 1.1em;
 }
-
+@media (max-width: 1366px){
+    .container {
+        background: url('/assets/images/resultDesktop.jpg');
+        background-size: cover;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    
+    }
+    
+    .result {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        height: 99vh;
+    }
+    
+    .result>img {
+        width: 80%;
+    }
+    
+    .Acoordeon {
+           
+            width: 50vw;
+            margin-top: 70px;
+            height: 60vh;
+        
+    }
+    
+    .Acoordeon>h2 {
+        margin-bottom: 20px;
+        font-family: 'Barlow', sans-serif;
+        text-align: center;
+    }
+    
+    button {
+        border: 1px solid white;
+        background-color: white;
+        padding: 15px;
+        border-radius: 6px;
+    
+    
+    }
+    
+    .mid {
+        padding: 5px;
+        width: 38vw;
+        
+    }
+    
+    .after {
+    
+        margin: 5px;
+        overflow: auto;
+    }
+    
+    .mid-shampoo {
+        margin: 5px;
+    
+    }
+    
+    .Treatment {
+        margin: 5px;
+    }
+    
+    .Leave {
+        margin: 5px;
+    }
+    
+    .Mask {
+        margin: 5px;
+    }
+    
+    .Cream {
+        margin: 5px;
+    }
+    
+    .JELLY {
+        margin: 5px;
+    }
+    
+    .MILK {
+        margin: 5px;
+        border: 1px solid white;
+    }
+    
+    .Tonic {
+        margin: 5px;
+    }
+    
+    .texto>p {
+        padding: 10px;
+        margin-top: 10px;
+        margin-left: 05px;
+        color: rgb(8, 8, 8);
+        width: 85%;
+        font-family: 'Barlow', sans-serif;
+        font-size: 0.9em;
+    }
+    
+    span {
+        font-weight: bold;
+    }
+    
+    strong {
+        font-size: 1.1em;
+    }
+}
+@media (min-width: 920px){
+    .container {
+        background: url('/assets/images/resultDesktop.jpg');
+        background-size: cover;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    
+    }
+    
+    .result {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        height: 99vh;
+        
+    }
+    
+    .result>img {
+        width: 80%;
+    }
+    
+    .Acoordeon {
+    width: 50vw;
+        margin-top: 70px;
+        height: 60vh;
+    }
+    
+    .Acoordeon>h2 {
+        margin-bottom: 20px;
+        font-family: 'Barlow', sans-serif;
+        text-align: center;
+    }
+    
+    button {
+        border: 1px solid white;
+        background-color: white;
+        padding: 15px;
+        border-radius: 6px;
+    
+    
+    }
+    
+    .mid {
+        padding: 5px;
+        width: 38vw;
+        
+    }
+    
+    .after {
+    
+        margin: 5px;
+        overflow: auto;
+    }
+    
+    .mid-shampoo {
+        margin: 5px;
+    
+    }
+    
+    .Treatment {
+        margin: 5px;
+    }
+    
+    .Leave {
+        margin: 5px;
+    }
+    
+    .Mask {
+        margin: 5px;
+    }
+    
+    .Cream {
+        margin: 5px;
+    }
+    
+    .JELLY {
+        margin: 5px;
+    }
+    
+    .MILK {
+        margin: 5px;
+        border: 1px solid white;
+    }
+    
+    .Tonic {
+        margin: 5px;
+    }
+    
+    .texto>p {
+        padding: 10px;
+        margin-top: 10px;
+        margin-left: 05px;
+        color: rgb(8, 8, 8);
+        width: 85%;
+        font-family: 'Barlow', sans-serif;
+        font-size: 0.9em;
+    }
+    
+    span {
+        font-weight: bold;
+    }
+    
+    strong {
+        font-size: 1.1em;
+    }
+}
 @media (max-width: 480px) {
     .container {
         height: 100vh;

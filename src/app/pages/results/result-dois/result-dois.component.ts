@@ -12,93 +12,96 @@ export class ResultDoisComponent {
 
   Mid: any = {
     visivel: true,
-    width: '38vw',
+    width: '39.5vw',
     height: '25px',
     backgroun29vhr: 'rgba(213, 199, 190, 0.3)',
     borderRadius: '10px 10px 10px 10px',
     transition: 'width 0.5s, height 0.5s',
-    border: '0.7px solid white'
+    border: '0.7px solid white',
+    overflow: '',
+    
+    
   };
   After: any = {
     visivel: true,
-    width: '38vw',
+    width: '39.5vw',
     height: '25px',
     backgroun29vhr: 'rgba(213, 199, 190, 0.3)',
     borderRadius: '10px 10px 10px 10px',
     transition: 'width 0.5s, height 0.5s',
-
+    overflow: '',
     border: '0.7px solid white'
   };
   Treatment: any = {
     visivel: true,
-    width: '38vw',
+    width: '39.5vw',
     height: '25px',
     backgroun29vhr: 'rgba(213, 199, 190, 0.3)',
     borderRadius: '10px 10px 10px 10px',
     transition: 'width 0.5s, height 0.5s',
-
+    overflow: '',
     border: '0.7px solid white'
   };
   Leave: any = {
     visivel: true,
-    width: '38vw',
+    width: '39.5vw',
     height: '25px',
     backgroun29vhr: 'rgba(213, 199, 190, 0.3)',
     borderRadius: '10px 10px 10px 10px',
     transition: 'width 0.5s, height 0.5s',
-
+    overflow: '',
     border: '0.7px solid white'
   };
   Mask: any = {
     visivel: true,
-    width: '38vw',
+    width: '39.5vw',
     height: '25px',
     backgroun29vhr: 'rgba(213, 199, 190, 0.3)',
     borderRadius: '10px 10px 10px 10px',
     transition: 'width 0.5s, height 0.5s',
-
+    overflow: '',
     border: '0.7px solid white',
 
   };
   Cream: any = {
     visivel: true,
-    width: '38vw',
+    width: '39.5vw',
     height: '25px',
     backgroun29vhr: 'rgba(213, 199, 190, 0.3)',
     borderRadius: '10px 10px 10px 10px',
     transition: 'width 0.5s, height 0.5s',
-
+    overflow: '',
     border: '0.7px solid white'
   };
   Jelly: any = {
     visivel: true,
-    width: '38vw',
+    width: '39.5vw',
     height: '25px',
     backgroun29vhr: 'rgba(213, 199, 190, 0.3)',
     borderRadius: '10px 10px 10px 10px',
     transition: 'width 0.5s, height 0.5s',
-
+    overflow: '',
     border: '0.7px solid white'
   };
 
   Milk: any = {
     visivel: true,
-    width: '38vw',
+    width: '39.5vw',
     height: '25px',
     backgroun29vhr: 'rgba(213, 199, 190, 0.3)',
     borderRadius: '10px 10px 10px 10px',
     transition: 'width 0.5s, height 0.5s',
-
+    overflow: '',
     border: '0.7px solid white'
   };
   Tonic: any = {
     visivel: true,
-    width: '38vw',
+    width: '39.5vw',
     height: '25px',
     backgroun29vhr: 'rgba(213, 199, 190, 0.3)',
     borderRadius: '10px 10px 10px 10px',
     transition: 'width 0.5s, height 0.5s',
-
+    overflow: '',
     border: '0.7px solid white'
   };
 
@@ -379,10 +382,10 @@ export class ResultDoisComponent {
 
 
   expandDivUm() {
-    this.Mid.width = '38vw';
+    this.Mid.width = '39.5vw';
     this.TextoUm = true;
-    this.Mid.height = '47vh';
-
+    this.Mid.height = '37vh';
+    this.Mid.overflow = 'auto';
 
     this.TextoDois = false;
     this.TextoTres = false
@@ -404,9 +407,10 @@ export class ResultDoisComponent {
     this.Tonic.height = '25px';
   }
   expandDivDois() {
-    this.After.width = '38vw';
+    this.After.width = '39.5vw';
     this.TextoDois = true;
     this.After.height = '29vh';
+    this.After.overflow = 'auto';
 
 
     this.TextoUm = false;
@@ -428,9 +432,11 @@ export class ResultDoisComponent {
     this.Tonic.height = '25px';
   }
   expandDivTres() {
-    this.Treatment.width = '38vw';
+    this.Treatment.width = '39.5vw';
     this.TextoTres = true;
-    this.Treatment.height = '35vh';
+    this.Treatment.height = '28vh';
+    this.Treatment.overflow = 'auto';
+
 
     this.TextoUm = false;
     this.TextoDois = false;
@@ -452,9 +458,12 @@ export class ResultDoisComponent {
     this.Tonic.height = '25px';
   }
   expandDivQuatro() {
-    this.Leave.width = '38vw';
+    this.Leave.width = '39.5vw';
     this.TextoQuatro = true;
-    this.Leave.height = '46vh';
+    this.Leave.height = '30vh';
+    this.Leave.overflow = 'auto';
+
+
 
     this.TextoUm = false;
     this.TextoDois = false;
@@ -477,9 +486,11 @@ export class ResultDoisComponent {
   }
 
   expandDivQuinto() {
-    this.Mask.width = '38vw';
+    this.Mask.width = '39.5vw';
     this.TextoQuinto = true;
-    this.Mask.height = '40vh';
+    this.Mask.height = '30vh';
+    this.Mask.overflow = 'auto';
+
 
     this.TextoUm = false;
     this.TextoDois = false;
@@ -501,9 +512,12 @@ export class ResultDoisComponent {
     this.Tonic.height = '25px';
   }
   expandDivSexto() {
-    this.Cream.width = '38vw';
+    this.Cream.width = '39.5vw';
     this.TextoSexto = true;
-    this.Cream.height = '40vh';
+    this.Cream.height = '30vh';
+    this.Cream.overflow = 'auto';
+
+
 
     this.TextoUm = false;
     this.TextoDois = false;
@@ -525,9 +539,12 @@ export class ResultDoisComponent {
   }
 
   expandDivSetimo() {
-    this.Jelly.width = '38vw';
+    this.Jelly.width = '39.5vw';
     this.TextoSetimo = true;
-    this.Jelly.height = '23vh';
+    this.Jelly.height = '28vh';
+    this.Jelly.overflow = 'auto';
+
+
 
     this.TextoUm = false;
     this.TextoDois = false;
@@ -549,9 +566,12 @@ export class ResultDoisComponent {
   }
 
   expandDivOito() {
-    this.Milk.width = '38vw';
+    this.Milk.width = '39.5vw';
     this.TextoOito = true;
-    this.Milk.height = '43vh';
+    this.Milk.height = '33vh';
+    this.Milk.overflow = 'auto';
+
+
 
     this.TextoUm = false;
     this.TextoDois = false;
@@ -575,9 +595,12 @@ export class ResultDoisComponent {
   }
 
   expandDivNono() {
-    this.Tonic.width = '38vw';
+    this.Tonic.width = '39.5vw';
     this.TextoNono = true;
     this.Tonic.height = '29vh';
+    this.Tonic.overflow = 'auto';
+
+
 
     this.TextoUm = false;
     this.TextoDois = false;
@@ -607,7 +630,8 @@ export class ResultDoisComponent {
       academic : this.resultService.form.academicTitle,
 			company:this.resultService.form.company,
       phone : this.resultService.form.phone,
-      result : this.resultService.Resultado
+      result : this.resultService.Resultado,
+      country : this.resultService.form.country
 		}
 		emailjs.send('service_q7kxuvq', 'template_oimyi3q', emailParams, 'j0dWighWN1fKIwCub')
 		

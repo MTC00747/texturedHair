@@ -9,7 +9,7 @@
         <div class="form">
             <form action="" method="post">
                 <label for="email">Email:</label>
-                <input type="text" id="email" name="email" required [(ngModel)]="email"><br>
+                <input type="text" id="email" name="email" required [(ngModel)]="email" required><br>
 
                 <label for="title">Academic title:</label>
                 <input type="email" id="academic-title" name="academicTitle" required [(ngModel)]="academicTitle"><br>
@@ -23,13 +23,15 @@
                 <label for="Company">Company:</label>
                 <input type="text" id="Company" name="company" [(ngModel)]="company"><br>
 
+                <label for="Company">Country:</label>
+                <input type="text" id="Country" name="country" [(ngModel)]="country"><br>
 
                 <label for="Phone">Phone:</label>
-                <input type="tel" id="Company" name="phone" [(ngModel)]="phone"><br>
+                <input type="tel" id="Company" name="phone" [(ngModel)]="phone" required><br>
 
             </form>
             <div class="aceita">
-                <input type="checkbox" id="aceite" name="aceite" required>
+                <input type="checkbox" id="aceite" name="aceite" [(ngModel)]="privacyAgreed" required>
                 <label for="aceite"> I read the
                     <a href="https://www.symrise.com/privacy-policy/" target="_blank">
                         Privacy Statement</a>. By submitting your email, you agree to our Terms & Privacy.</label><br>

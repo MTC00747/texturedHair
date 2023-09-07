@@ -246,6 +246,88 @@ input {
         display: block;
     }
 }
+@media (min-width: 920px){
+.container {
+        height: 130vh;
+        width: 100vw;
+        align-items: center;
+        background: url('/assets/images/desktop.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .bloco-um{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .image >img {
+        padding-bottom: 10px;
+        width:160px;
+        margin-top: 20px;
+    }
+    .titulo{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+        align-items: center;
+    }
+    .titulo > h3{
+        font-family: 'Barlow', sans-serif;
+        text-align: center;
+        width: 40%;
+    }
+    .titulo >img {
+        width: 140px;
+    }
+    .form {
+        padding: 20px;
+        margin-top: 20px;
+        height: 70vh;
+        width: 35vw;
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 20px;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+        height: 65vh;
+    }
+    
+    label {
+        font-family: 'Barlow', sans-serif;
+        margin: 2px;
+        margin-bottom: 5px;
+    }
+    
+    input {
+        border: 1px solid white;
+        border-radius: 4px;
+    }
+    
+    
+    /*Bloco 3*/
+    .bloco-tres{
+        width: 100vw;
+        padding-top: 20px;
+        
+    }
+    .bloco-tres>button {
+        width: 150px;
+        margin-top: 20px;
+        height: 40px;
+        font-family: 'Barlow', sans-serif;
+        background-color: black;
+        color: white;
+        font-size: 1.3em;
+        border-radius: 10px;
+        margin: auto;
+        display: block;
+    }
+}
 /*Tablet*/
 @media (max-width: 768px){
     .container {

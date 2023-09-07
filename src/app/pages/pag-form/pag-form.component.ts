@@ -15,6 +15,7 @@ export class PagFormComponent {
   lastName : string = ''
   company : string =''
   phone : string = ''
+  country : string = ''
   privacyAgreed: boolean = false;
 
   
@@ -32,17 +33,22 @@ export class PagFormComponent {
   }
   
   NextPage(){
-    if(this.email === '' && this.privacyAgreed ===false){
+    if (this.privacyAgreed === false){
       alert('Fill in all fields!')
       console.log(this.formResult.form.firstName)
-    }else{
+    }else if(this.email === '' ){
+      alert('Fill in all fields!')
+    }else if(this.phone === ''){
+      alert('Fill in all fields!')
+    }
+    else{
       this.formResult.form.email =  this.email
       this.formResult.form.academicTitle = this.academicTitle 
       this.formResult.form.firstName = this.firstName  
       this.formResult.form.LastName = this.lastName  
       this.formResult.form.company = this.company 
       this.formResult.form.phone =  this.phone 
-
+      this.formResult.form.country = this.country
       this.Route.navigate(['Escolha-de-Cabelo'])
     }
   }

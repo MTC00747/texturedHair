@@ -12,6 +12,7 @@ export class ResultadosService {
     email : '',
     company: '',
     phone : '',
+    country : ''
    }
   constructor() { }
 

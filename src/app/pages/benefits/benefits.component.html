@@ -11,6 +11,6 @@
             <img (click)="Beneficio(i)" [src]="icone.url" [ngClass]="{ 'active': icone.active}" >
         </div>
     </div>
-    <Button class="next" (click)="nextPage()" [disabled]="!buttonsEnabled" >Result</Button>
+    <Button class="next" [ngStyle]="button" (click)="nextPage()" [disabled]="!buttonsEnabled" >Result</Button>
 
 </div>

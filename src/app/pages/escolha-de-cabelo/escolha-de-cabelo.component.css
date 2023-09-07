@@ -2,7 +2,7 @@
     background: url('/assets/images/desktop.jpg');
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 110vh;
     width: 100vw;
 }
 
@@ -72,7 +72,6 @@
     float: right;
     margin-right: 20px;
 }
-
 @media (max-width: 768px) {
 
     .container {
